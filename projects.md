@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: projects
 subtitle: Data Science Projects
 ---
 

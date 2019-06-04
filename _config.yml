@@ -14,19 +14,19 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: mingjiezhao
+title: Welcome to Mingjie's website!
 
 # Short description of your site
-description: Ph.D. student in Statistics/Data scientist
+description: M.S. student in Statistics at Duke University
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Research: "research"
-  Blog: "blog"
-  CV: "https://fanbuduke17.github.io/FanBu_CV_201903.pdf"
+#   Research: "research"
+#   Blog: "blog"
+#   CV: "https://fanbuduke17.github.io/FanBu_CV_201903.pdf"
   # Resources:
     # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     # - Learn markdown: "http://www.markdowntutorial.com/"
@@ -36,7 +36,7 @@ navbar-links:
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 # avatar: "/img/avatar-icon.png"
-avatar: "FanBu_Facebook.jpg"
+# avatar: "FanBu_Facebook.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -48,11 +48,11 @@ avatar: "FanBu_Facebook.jpg"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: mingjiezhao
-  email: "fan.bu1@duke.edu"
-  facebook: Fanny Bu  # eg. daattali
-  github: fanbuduke17    # eg. daattali
+  email: "mz136@duke.edu"
+#   facebook:   # eg. daattali
+  github: mingjiezhao    # eg. daattali
   # twitter: yourname   # eg. daattali
-  # linkedin: yourname  # eg. daattali
+  linkedin: mingjiezhao  # eg. daattali
   # snapchat: yourname  # eg. daattali
   # instagram: yourname # eg. daattali
   # youtube: yourlink   # eg. user/daattali or channel/daattali
@@ -71,7 +71,7 @@ footer-links-active:
   google-plus: false
   github: true
   reddit: false
-  linkedin: false
+  linkedin: true
   xing: false
   stackoverflow: false
   snapchat: false
@@ -88,7 +88,7 @@ share-links-active:
   twitter: false
   facebook: false
   google: false
-  linkedin: false
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer

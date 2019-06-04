@@ -4,13 +4,11 @@ title: About me
 subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Mingjie a M.S. student in the Department of Statistical Science, Duke University. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+While pursuing her M.S. degree, Mingjie is passionate about data science and artificial intelligence. She likes reading and discussing about how data science and technologies are changing our world. She also enjoys working on data science projects to hone her skills of R and python (please check her github for more details).
 
-What else do you need?
+Mingjie is an active person who enjoys working out and outdoor activities such as hiking and paddle boarding. When she does have free time, she enjoys working out in the gym, watching movies and reading. She also loves musical shows and museums.
 
-### my history
+Mingjie has a 4 years old chihuahua named Lilly, who is a fan of hiking with her in the woods. Mingjie has lived in 7 states (PA, WA, NY, VA, OR, NC, GA) in the U.S. She enjoys traveling and has driven across the country from east coast to west coast. She plans to visit all the states and so far has been to over 30 states.
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.

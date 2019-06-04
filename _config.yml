@@ -8,8 +8,8 @@ url: "http://mingjiezhao.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
+# url: "http://mingjiezhao.github.io/projectname"
+# baseurl: "/nyt_api_tool"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
@@ -24,7 +24,7 @@ description: M.S. student in Statistics at Duke University
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-#   Research: "research"
+  Projects: "projects"
 #   Blog: "blog"
 #   CV: "https://fanbuduke17.github.io/FanBu_CV_201903.pdf"
   # Resources:

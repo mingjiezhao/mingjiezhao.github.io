@@ -4,9 +4,7 @@ title: About me
 subtitle: 
 ---
 
-Mingjie a M.S. student in the Department of Statistical Science, Duke University. 
-
-While pursuing her M.S. degree, Mingjie is passionate about data science and artificial intelligence. She likes reading and discussing about how data science and technologies are changing our world. She also enjoys working on data science projects to hone her skills of R and python (please check her github for more details).
+While pursuing her M.S. degree in the Department of Statistical Science at Duke University, Mingjie is passionate about data science and artificial intelligence. She likes reading and discussing about how data science and technologies are changing our world. She also enjoys working on data science projects to hone her skills of R and python (please check "projects" for more details).
 
 Mingjie is an active person who enjoys working out and outdoor activities such as hiking and paddle boarding. When she does have free time, she enjoys working out in the gym, watching movies and reading. She also loves musical shows and museums.
 

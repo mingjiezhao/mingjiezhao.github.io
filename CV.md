@@ -8,13 +8,13 @@ subtitle:
 
 - Duke University, Durham, NC       
 
-Major in Statistical Science          
+	Major in Statistical Science          
 
 Expected graduation: May 2020
 
 - The Pennsylvania State University, University Park, PA    
 
-Major in Architectural Engineering, Minor in Statistics        
+	Major in Architectural Engineering, Minor in Statistics        
 
 
 
@@ -52,7 +52,7 @@ Major in Architectural Engineering, Minor in Statistics
 
 - Building Simulation Conference 
 
-International Building Performance Simulation Association (IBPSA), France
+	International Building Performance Simulation Association (IBPSA), France
 
 - Sustainable Development in Building and Environment  
 

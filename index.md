@@ -11,14 +11,13 @@ bigimg:
 
 I am currently studying in the Department of Statistical Science at Duke University, and I will graduate in May 2020. 
 
-I am passionate about data science and artificial intelligence. Therefore, I enjoy using my programming and statistical knowledge to build up some tools and 
-analyze some interesting datasets.
+I am passionate about data science and artificial intelligence. Therefore, I enjoy using my programming and statistical knowledge to build up small tools and analyze some interesting datasets.
 
-Click projects for more details.
+Click [projects](https://mingjiezhao.github.io/projects/) for more details.
 
 Life is more than studying and working. I am always working on self-development to enrich my life!
 
-Click About Me for more details.
+Click [About Me](https://mingjiezhao.github.io/aboutme/) for more details.
 
 ## How to find Me
 

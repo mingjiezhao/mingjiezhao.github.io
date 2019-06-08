@@ -8,9 +8,7 @@ subtitle:
 
 - Duke University, Durham, NC       
 
-	Major in Statistical Science          
-
-Expected graduation: May 2020
+	Major in Statistical Science, Expected graduation: May 2020
 
 - The Pennsylvania State University, University Park, PA    
 
@@ -43,6 +41,7 @@ Expected graduation: May 2020
 - Summer Research Associate, Urban Green Council, NY  
 
 - Research Assistant, Pennsylvania State University, PA     
+
 
 #### International Conference Presentations
 

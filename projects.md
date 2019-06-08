@@ -10,7 +10,7 @@ subtitle:
 
 The goal of this app is to search for articles from New York Times API on a certain date and output a list of article names. By clicking on an article name listed in the search results, a pop-up window is displayed with more information about the article, including the first image in the article, a head paragraph (snippet), and a hyperlink which directs the users to the article on the New York Times' website.
 
-![shiny tool]: (https://github.com/mingjiezhao/nyt_api_tool/blob/master/pic.png)
+![shiny tool]: (https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/pic.png)
 
 #### Latent Dirichlet Allocation
 
@@ -26,9 +26,7 @@ The package is available to install: pip install pip install LDA-project-19
 
 - [SQL databse for USDA by Python](https://github.com/mingjiezhao/USDA_database) 
 
-Are you interested in getting to know more about food we have everyday?
-
-[United States Department of Agriculture](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/) provides great resources about nutritions of daily food.
+Are you interested in getting to know more about food we have everyday? [United States Department of Agriculture](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/) provides great resources about nutritions of daily food.
 
 This project is written in Python to create a SQL database for USDA food data:
 

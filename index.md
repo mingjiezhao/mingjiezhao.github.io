@@ -1,10 +1,11 @@
+
 ---
 layout: page
 title: Mingjie Zhao
 subtitle: M.S. student in Statistics at Duke University
 use-site-title: true
 bigimg:
-  - "img/lavender.jepg" 
+  - "img/lavender.jpeg" 
 ---
 Welcome to my website!
 
@@ -20,7 +21,9 @@ Life is more than studying and working. I am always working on self-development 
 Click About Me for more details.
 
 ## How to find Me
+
 Email: mingjie.zhao@duke.edu
+
 [Linkedin](linkedin.com/in/mingjiezhao/)
 
 

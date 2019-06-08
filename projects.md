@@ -21,3 +21,15 @@ Latent Dirichlet Allocation (LDA) is a very important model in machine learning 
 Two methods are used to implement the LDA algorithm: Expectation-Maximization (EM) and Gibbs Sampling.
 
 The package is available to install: pip install pip install LDA-project-19
+
+#### SQL databse for USDA food description data
+
+- [SQL databse for USDA by Python](https://github.com/mingjiezhao/USDA_database) 
+
+Are you interested in getting to know more about food we have everyday?
+
+[United States Department of Agriculture](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/) provides great resources about nutritions of daily food.
+
+This project is written in Python to create a SQL database for USDA food data:
+-The importdata.py establishs a SQL database (food.db) for USDA data (FOOD_DES.txt)
+-The food_query.py takes SQL commends to make queries from the database

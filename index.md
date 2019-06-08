@@ -1,13 +1,15 @@
-
 ---
 layout: page
 title: Mingjie Zhao
-subtitle: M.S. student in Statistics at Duke University
+subtitle: M.S. student in Statistical Science at Duke University
 use-site-title: true
 bigimg:
-  - "img/lavender.jpeg" 
+  - "img/lavender.jpeg"
+ 
 ---
-Welcome to my website!
+
+
+# Welcome to my website!
 
 I am currently studying in the Department of Statistical Science at Duke University, and I will graduate in May 2020. 
 

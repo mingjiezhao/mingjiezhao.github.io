@@ -10,3 +10,5 @@ Mingjie is an active person who enjoys working out and outdoor activities such a
 
 Mingjie has a 4 years old chihuahua named Lilly, who is a fan of hiking with her in the woods. Mingjie has lived in 7 states (PA, WA, NY, VA, OR, NC, GA) in the U.S. She enjoys traveling and has driven across the country from east coast to west coast. She plans to visit all the states and so far has been to over 30 states.
 
+* A pic taken at beautiful OR coast
+![hiking](img/hiking.jpeg)

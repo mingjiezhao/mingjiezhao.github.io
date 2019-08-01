@@ -6,9 +6,13 @@ subtitle:
 
 #### Education
 
-Duke University, Durham, NC       Major in Statistical Science          Expected graduation: May 2020
+- Duke University, Durham, NC       
 
-The Pennsylvania State University, University Park, PA     Major in Architectural Engineering, Minor in Statistics        
+	Major in Statistical Science, Expected graduation: May 2020
+
+- The Pennsylvania State University, University Park, PA    
+
+	Major in Architectural Engineering, Minor in Statistics        
 
 
 
@@ -38,16 +42,17 @@ The Pennsylvania State University, University Park, PA     Major in Architectura
 
 - Research Assistant, Pennsylvania State University, PA     
 
+
 #### International Conference Presentations
 
 - North American Passive House Conference      
 
-Passive House Institute US (PHIUS), United States 
+	Passive House Institute US (PHIUS), United States 
 
 - Building Simulation Conference 
 
-International Building Performance Simulation Association (IBPSA), France
+	International Building Performance Simulation Association (IBPSA), France
 
 - Sustainable Development in Building and Environment  
 
-China Green Building Council (CGBC) and Chongqing University, China      
+	China Green Building Council (CGBC) and Chongqing University, China      

@@ -26,7 +26,7 @@ navbar-links:
   About Me: "aboutme"
   Projects: "projects"
 #   Blog: "blog"
-#   CV: "https://fanbuduke17.github.io/FanBu_CV_201903.pdf"
+  CV: "CV"
   # Resources:
     # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     # - Learn markdown: "http://www.markdowntutorial.com/"
@@ -36,11 +36,11 @@ navbar-links:
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 # avatar: "/img/Image_1 2019-06-04_21-39-33.jpeg"
-# avatar: "FanBu_Facebook.jpg"
+
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-title-img: "/img/Image_1 2019-06-04_21-39-33.jpeg"
+# title-img: "/img/Image_1 2019-06-04_21-39-33.jpeg"
 
 # --- Footer options --- #
 

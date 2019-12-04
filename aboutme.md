@@ -1,14 +1,14 @@
 ---
 layout: page
-title: About me
+title: About Me
 subtitle: 
 ---
 
-While pursuing her M.S. degree in the Department of Statistical Science at Duke University, Mingjie is passionate about data science and artificial intelligence. She likes reading and discussing about how data science and technologies are changing our world. She also enjoys working on data science projects to hone her skills of R and python (please check "projects" for more details).
+While pursuing my M.S. degree in the Department of Statistical Science at Duke University, I am very passionate about data science and artificial intelligence. I like reading and discussing about how data science and technologies are changing our world. I also enjoy working on data science projects to hone MY skills of R and python (please check ["projects"](https://mingjiezhao.github.io/projects/) for more details).
 
-Mingjie is an active person who enjoys working out and outdoor activities such as hiking and paddle boarding. When she does have free time, she enjoys working out in the gym, watching movies and reading. She also loves musical shows and museums.
+I am an active person who enjoys working out and outdoor activities such as hiking and paddle boarding. I have visited more than 20 national parks and there are more on my list. When I have free time, I enjoy working out in the gym, watching comedy movies and reading novels. I also love musical shows and museums.
 
-Mingjie has a 4 years old chihuahua named Lilly, who is a fan of hiking with her in the woods. Mingjie has lived in 7 states (PA, WA, NY, VA, OR, NC, GA) in the U.S. She enjoys traveling and has driven across the country from east coast to west coast. She plans to visit all the states and so far has been to over 30 states.
+I have a 5-year old chihuahua named Lilly, who is a fan of hiking with me in the woods. I have lived in 7 states (PA, WA, NY, VA, OR, NC, GA) in the U.S. As a passionate traveler, I have driven across the country from east coast to west coast for two times. I plan to visit all the states and so far has been to over 30 states.
 
-* A pic taken at beautiful OR coast
+* A pic taken at beautiful Oregon coast
 ![hiking](img/hiking.jpeg)

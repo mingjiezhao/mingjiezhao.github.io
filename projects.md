@@ -3,8 +3,19 @@ layout: page
 title: Data Science Projects
 subtitle: 
 ---
+#### (1) A visualization and modeling tool for USA health data
 
-#### An article search tool for New York Times
+- An interactive [R shiny tool](https://mingjiezhao.shinyapps.io/500_cities_app/) to provide health-related insights using data visualization and hierarchical models. 
+
+Did you know which state has the most mental and physical health concerns? Did you know if the obesity rate in your state is higher than the national average? If you hope to learn more about these health-related facts, you may want to play with my tool created based on the big dataset of [500 Cities project 2018 release](https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-2018-release). 
+
+By selecting a health-related variable and a state, this tool will show you cool visualization of a map plot and two density plots. This model also performs hierarchical model and show you if the variable vary significantly across the states.
+
+The original code of the tool can be found on [my github](https://github.com/mingjiezhao/500_cities_for_better_health)
+
+![shiny tool](img/health_data_img)
+
+#### (2) An article search tool for New York Times
 
 - This is a [shiny tool](https://github.com/mingjiezhao/nyt_api_tool) created by R to search news on New York Times based on NYT API. 
 
@@ -13,7 +24,7 @@ The goal of this app is to search for articles from New York Times API on a cert
 ![shiny tool](img/pic.png)
 
 
-#### Machine learning application: Latent Dirichlet Allocation for text processing
+#### (3) Machine learning application: Latent Dirichlet Allocation for text processing
 
 - [Implementation of Latent Dirichlet Allocation ](https://github.com/mingjiezhao/Latent-Dirichlet-Allocation) using Python. 
 
@@ -23,7 +34,7 @@ Two methods are used to implement the LDA algorithm: Expectation-Maximization (E
 
 The package is available to install: pip install pip install LDA-project-19
 
-#### SQL databse for USDA food description data
+#### (4) SQL databse for USDA food description data
 
 - [SQL databse for USDA by Python](https://github.com/mingjiezhao/USDA_database) 
 

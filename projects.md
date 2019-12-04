@@ -5,13 +5,13 @@ subtitle:
 ---
 #### (1) A visualization and modeling tool for USA health data
 
-- An interactive [R shiny tool](https://mingjiezhao.shinyapps.io/500_cities_app/) to provide health-related insights using data visualization and hierarchical models. 
+- An interactive R shiny tool ([try the tool](https://mingjiezhao.shinyapps.io/500_cities_app/) ) which provides health-related insights using data visualization and hierarchical models. 
 
 Did you know which state has the most mental and physical health concerns? Did you know if the obesity rate in your state is higher than the national average? If you hope to learn more about these health-related facts, you may want to play with my tool created based on the big dataset of [500 Cities project 2018 release](https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-2018-release). 
 
-By selecting a health-related variable and a state, this tool will show you cool visualization of a map plot and two density plots. This model also performs hierarchical model and show you if the variable vary significantly across the states.
+By selecting a health-related variable and a state, this tool will show you cool visualization of a map plot and two density plots. The tool also performs hierarchical model and show you if the variable vary significantly across the states.
 
-The original code of the tool can be found on [my github](https://github.com/mingjiezhao/500_cities_for_better_health)
+The original code of the tool can be found on [my github](https://github.com/mingjiezhao/500_cities_for_better_health).
 
 ![shiny tool](img/health_data_img.png)
 

@@ -13,7 +13,7 @@ By selecting a health-related variable and a state, this tool will show you cool
 
 The original code of the tool can be found on [my github](https://github.com/mingjiezhao/500_cities_for_better_health)
 
-![shiny tool](img/health_data_img)
+![shiny tool](img/health_data_img.png)
 
 #### (2) An article search tool for New York Times
 

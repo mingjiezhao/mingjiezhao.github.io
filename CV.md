@@ -3,6 +3,19 @@ layout: page
 title: CV
 subtitle: 
 ---
+#### Experiences
+- Data Science Consultant, Self-employed, NC
+
+- Summer Intern, State Farm, GA
+
+- Data Analyst, Staengl Engineering, VA   
+
+- Researcher, Pacific Northwest National Laboratory, WA       
+
+- Summer Research Associate, Urban Green Council, NY  
+
+- Research Assistant, Pennsylvania State University, PA 
+
 
 #### Education
 
@@ -13,7 +26,6 @@ subtitle:
 - The Pennsylvania State University, University Park, PA    
 
 	Major in Architectural Engineering, Minor in Statistics        
-
 
 
 #### Skills
@@ -28,19 +40,12 @@ subtitle:
 	R programming, Python, Minitab, SAS, SQL and Macro VBA
 
 	Basic knowledge of C, Perl
+   
+- Mechanical Engineering and Building Science
 
+	Building mechanical systems, ASHRAE standards, sustainable building design, indoor environmental quality
 
-#### Experiences
-
-- Summer Intern, State Farm, GA
-
-- Data Analyst, Staengl Engineering, VA   
-
-- Researcher, Pacific Northwest National Laboratory, WA       
-
-- Summer Research Associate, Urban Green Council, NY  
-
-- Research Assistant, Pennsylvania State University, PA     
+	EnergyPlus, CFD
 
 
 #### International Conference Presentations

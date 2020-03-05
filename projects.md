@@ -40,9 +40,9 @@ The package is available to install: pip install pip install LDA-project-19
 
 This data analysis is created based on the data from Kaggle's Instacart Market Basket Analysis, aims to provide business insights with data science techniques.
 
-This analysis includes 3 parts: Sales analysis, Customer analysis, and Orders analysis 
+This analysis includes 3 parts: Sales analysis, Customer analysis, and Orders analysis.
 
-Multiple key questions such as "What is the peak day and time of orders?", "Any differences in new customer group and existing customer group?", "what is the most common thing people get into the cart?", etc.
+Multiple key questions are answered, such as "What is the peak day and time of orders?", "Any differences in new customer group and existing customer group?", "what is the most common thing people get into the cart?", etc.
 
 
 #### (5) SQL databse for USDA food description data

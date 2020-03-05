@@ -34,7 +34,18 @@ Two methods are used to implement the LDA algorithm: Expectation-Maximization (E
 
 The package is available to install: pip install pip install LDA-project-19
 
-#### (4) SQL databse for USDA food description data
+#### (4) Instacart data analysis with data visualization using Python
+
+- [Jupyter Notebook on Github](https://github.com/mingjiezhao/Instacart_data_analysis) 
+
+This data analysis is created based on the data from Kaggle's Instacart Market Basket Analysis, aims to provide business insights with data science techniques.
+
+This analysis includes 3 parts: Sales analysis, Customer analysis, and Orders analysis 
+
+Multiple key questions such as "What is the peak day and time of orders?", "Any differences in new customer group and existing customer group?", "what is the most common thing people get into the cart?", etc.
+
+
+#### (5) SQL databse for USDA food description data
 
 - [SQL databse for USDA by Python](https://github.com/mingjiezhao/USDA_database) 
 

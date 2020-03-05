@@ -17,6 +17,6 @@ No matter if you are a professor working on a research project, a stakeholder wh
 Most importantly, this consultancy is totally #FREE#. I hope to utilize my background in both engineering and statistics to do the volunteer work and contribute to a greener energy future. 
 
 ### How to get this free DS consultation?
-Please send me an email (mz136@duke.edu) to schedule a time for ~1 hour  free consultation. A scheduling app will come soon!
+Please send me an email (mingjie.zhao@duke.edu) to schedule a time for ~1 hour  free consultation. A scheduling app will come soon!
 
 *disclaimer*: this free service is provided for your reference only. You agree that you use my suggestions at your own risk. I am not responsible for any unwanted results by using this service.

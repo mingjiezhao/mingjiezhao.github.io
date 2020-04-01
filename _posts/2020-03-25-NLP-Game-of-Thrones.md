@@ -4,10 +4,10 @@ title: NLP Analysis for Game of Thones (1)
 subtitle: Pre-processing, word frequency analysis and LDA
 gh-repo: mingjiezhao/Game_of_thrones
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [NLP]
 comments: true
 ---
-
+![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
 ## 1. Introduction
 Many people around me are fans of Game of Thrones, and last summer I heard a lot of complaints about the show's ending. For whatever reason, my brain has had difficulty memorizing character names, especially when the relationships of characters are complicated. So I gave up watching the show after a few episodes. However, I think it would be very interesting to analyze the words of the characters. The show creates a fantastic world and I am curious to learn about the world through the characters's words (much faster than watching the whole show which includes 73 episodes), and that's the motiviation of this project. Hope you have fun reading it!
 

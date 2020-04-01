@@ -23,23 +23,22 @@ In this project, I picked four characters with the most lines. You may be wonder
 ### 1) Data preprocessing
 Firstly, read in (a) dataset which was found on Github ([json file](https://github.com/jeffreylancaster/game-of-thrones)). The original dataset is a huge list of list and I manipulated the dataset to get a list of the characters and a new dataframe to count for numbers of sentence for each character. We can see that the average number of sentences in the show across all the characters is 181.5, while the most talktaive character said 1704 sentences. However, there are a lot of characters who only said one sentence in the show. And the 4 characters who are on my list of top 4 talktive ones are
 
-<table border="1">
+<table border="1" width="554" style="width: 552px;">
 <tbody>
 <tr>
-<td>Tyrion Lannister</td>
-<td>Jon Snow</td>
-<td>Daenerys Targaryen</td>
-<td>Cersei Lannister</td>
+<td style="width: 114px;">Tyrion Lannister</td>
+<td style="width: 120px;">Jon Snow</td>
+<td style="width: 202px;">Daenerys Targaryen</td>
+<td style="width: 116px;">Cersei Lannister</td>
 </tr>
 <tr>
-<td><img src="https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg" alt="1" width="255" height="393" /></td>
-<td><img src="https://upload.wikimedia.org/wikipedia/en/3/30/Jon_Snow_Season_8.png" alt="" width="263" height="378" /></td>
-<td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg/330px-Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg" alt="" width="379" height="265" /></td>
-<td><img src="https://upload.wikimedia.org/wikipedia/en/2/22/Cersei_Lannister_in_Black_Dress_in_Season_5.jpg" alt="" width="244" height="409" /></td>
+<td style="width: 114px;"><img src="https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg" alt="1" width="110" height="168" /></td>
+<td style="width: 120px;"><img src="https://upload.wikimedia.org/wikipedia/en/3/30/Jon_Snow_Season_8.png" alt="" width="118" height="169" /></td>
+<td style="width: 202px;"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg/330px-Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg" alt="" width="198" height="139" /></td>
+<td style="width: 116px;"><img src="https://upload.wikimedia.org/wikipedia/en/2/22/Cersei_Lannister_in_Black_Dress_in_Season_5.jpg" alt="" width="101" height="170" /></td>
 </tr>
 </tbody>
 </table>
-
  
 I hope this is not a surprising result to you if you are a fan, because what they've said would be very important here in my analysis below.
 

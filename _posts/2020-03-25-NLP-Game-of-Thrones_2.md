@@ -26,6 +26,7 @@ It is also insightful to perform setiment analysis to check emotions within the 
 
 ## 3. Word cloud
 Last but not least, I created a word cloud for each character to visualize the emotional words in lines. We can see that on the negative side, "kill" and "die" are really eyes-catching, while "love" and "grace" pop up in the positive side.
+
 -Tyrion Lannister
 ![img8](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic8.png?raw=true){: .center-block :}
 -Jon Snow

@@ -13,6 +13,8 @@ Many people around me are fans of Game of Thrones, and last summer I heard a lot
 
 Since this analysis is a bit long, I figured it would be better to break it down to two posts. This is the first half of the analysis, including the data processing, word frequency analysis and LDA (topics model). The second post focus on sentiment analysis and word cloud analysis, as well as some conclusions. 
 
+The analysis is made through R and the code is published in my [github](https://github.com/mingjiezhao/Game_of_thrones).
+
 ## 2. Methodology
 In this project, I picked four characters with the most lines. You may be wondering by now about who are the most talkative ones in this show. Well, the answer will be provided below in the analysis. Since characters may speak around certain topics based on their character settings, I created LDA (Latent Dirichlet Allocation) models of these 4 characters to see if there are main topics from what they said. I also performed sentiment analysis on their words to see how they feel about by living in the fantastic world. Data visualizations are created by multiple plots and some findings are provided at the end of the project.
 

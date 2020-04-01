@@ -21,7 +21,13 @@ In this project, I picked four characters with the most lines. You may be wonder
 
 ## 3. Anslysis
 ### 1) Data preprocessing
-Firstly, read in (a) dataset which was found on Github (json file provided by https://github.com/jeffreylancaster/game-of-thrones). The original dataset is a huge list of list and I manipulated the dataset to get a list of the characters and a new dataframe to count for numbers of sentence for each character. We can see that the average number of sentences in the show across all the characters is 181.5, while the most talktaive character said 1704 sentences. However, there are a lot of characters who only said one sentence in the show. And the 4 characters who are on my list of top 4 talktive ones are Tyrion Lannister, Jon Snow, Daenerys Targaryen and Cersei Lannister. I hope this is not a surprising result to you if you are a fan, because what they've said would be very important here in my analysis below.
+Firstly, read in (a) dataset which was found on Github (json file provided by https://github.com/jeffreylancaster/game-of-thrones). The original dataset is a huge list of list and I manipulated the dataset to get a list of the characters and a new dataframe to count for numbers of sentence for each character. We can see that the average number of sentences in the show across all the characters is 181.5, while the most talktaive character said 1704 sentences. However, there are a lot of characters who only said one sentence in the show. And the 4 characters who are on my list of top 4 talktive ones are 
+-Tyrion Lannister ![TL](https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg)
+-Jon Snow ![JS](https://upload.wikimedia.org/wikipedia/en/3/30/Jon_Snow_Season_8.png)
+- Daenerys Targaryen 
+- Cersei Lannister. 
+
+I hope this is not a surprising result to you if you are a fan, because what they've said would be very important here in my analysis below.
 
 
 ### 2) Word frequency analysis

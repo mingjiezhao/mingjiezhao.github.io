@@ -25,7 +25,7 @@ description: M.S. student in Statistics at Duke University
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
-#   Blog: "blog"
+  Blog: "blog"
   CV: "CV"
   # Resources:
     # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
@@ -85,9 +85,9 @@ footer-links-active:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: false
-  facebook: false
-  google: false
+  twitter: true
+  facebook: true
+  google: true
   linkedin: true
 
 # How to display the link to the website in the footer

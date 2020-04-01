@@ -13,7 +13,7 @@ By selecting a health-related variable and a state, this tool will show you cool
 
 The original code of the tool can be found on [my github](https://github.com/mingjiezhao/500_cities_for_better_health).
 
-![shiny tool](img/health_data_img.png)
+![shiny tool](img/health_data_img.png){: .center-block :}
 
 #### (2) An article search tool for New York Times
 
@@ -21,7 +21,7 @@ The original code of the tool can be found on [my github](https://github.com/min
 
 The goal of this app is to search for articles from New York Times API on a certain date and output a list of article names. By clicking on an article name listed in the search results, a pop-up window is displayed with more information about the article, including the first image in the article, a head paragraph (snippet), and a hyperlink which directs the users to the article on the New York Times' website.
 
-![shiny tool](img/pic.png)
+![shiny tool](img/pic.png){: .center-block :}
 
 
 #### (3) Machine learning application: Latent Dirichlet Allocation for text processing
@@ -44,8 +44,19 @@ This analysis includes 3 parts: Sales analysis, Customer analysis, and Orders an
 
 Multiple key questions are answered, such as "What is the peak day and time of orders?", "Any differences in new customer group and existing customer group?", "what is the most common thing people get into the cart?", etc.
 
+#### (5) NLP Analysis for Game of Thrones 
 
-#### (5) SQL databse for USDA food description data
+- [Analysis of lines with R Markdown](https://github.com/mingjiezhao/Game_of_thrones)
+
+Many people around me are fans of Game of Thrones and this fun project aims to analyze the words of the characters based on NLP (Natural Language Processing) techniques.
+
+In this project, four characters (Tyrion Lannister, Jon Snow, Daenerys Targaryen and Cersei Lannister) are picked for the analysis, because they said the most sentences. 
+
+LDA (Latent Dirichlet Allocation) models are performed to see if there are some main topics from what they said. I also performed sentiment analysis on their words to see how they feel about by living in the fantastic world.
+
+![Game of Thrones pic](img/Tyrion_senti.png){: .center-block :}
+
+#### (6) SQL databse for USDA food description data
 
 - [SQL databse for USDA by Python](https://github.com/mingjiezhao/USDA_database) 
 

@@ -23,15 +23,15 @@ Firstly, read in (a) dataset which was found on Github (json file provided by ht
 
 ### 2) Word frequency analysis
 To deal with the text data, I created a function to do data manipulation including removing punctuation, numbers and stopwords. I also did word stemming to remove affixes. Then I created a chart to show which words are used the most by these characters. It's interesting to see that these top words are highly correlated with each character's background. For example, Tyrion used "king" and "father" a lot, because he spent a lot of court business dealing with nobles. Also Tyrion lived in the shadow of his father Tywin Lannister for a long time, until he killed his own father. Daenerys liked to say "dragon" and "people", since she is the mother of three dragons, and is considered to be the "Mother of dragons". And  Cersei was the ruling queen of the seven kingdoms, until losing it to Dany. She married King Robert, and is mother of two kings. That may explain her favorite words like "king", "father" and "love".
-![img1](img/posts_imgs/post1-nlp/pic1.png){: .center-block :}
-![Game of Thrones pic](img/Tyrion_senti.png)
+![img1](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic1.png){: .center-block :}
+
 
 ### 3) LDA and topic model
 Latent Dirichlet Allocation (LDA) is a widely used model in natural language processing (NLP) as an unsupervised learning method. In this project, I am trying to find 3 topics for each character. A function was written to perform the LDA modeling and a chart was plotted for the top 4 words in the 3 topics, to visualize the results and understand the topics that were extracted from these words.
 
-It's interesting to see that some of the topics correlate closely with the show. For example, the third topic of Jon includes key words like "wall", "night" and "watch". This probably correlates with the story that Jon has served in the Night Watch, first as a personal steward of the then Lord Commander, and then became a Lord Commander of the Night Watch himself. The main duty of the Night Watch is to guard the Wall. Also, keywords in Topic 3 include other languages spoken by Dany, as she is ruling many people of different cultures and races. Another good example is the Topic 2 of Cersei include keywords like "love"", "brother", and "daughter", while Cersei has a relationship and affair with her twin brother Jaime Lannister.
-![img2](img/posts_imgs/post1-nlp/pic2.png){: .center-block :}
-![img3](img/posts_imgs/post1-nlp/pic3.png)
+It's interesting to see that some of the topics correlate closely with the show. For example, the third topic of Jon includes key words like "wall", "night" and "watch". This probably correlates with the story that Jon has served in the Night Watch, first as a personal steward of the then Lord Commander, and then became a Lord Commander of the Night Watch himself. The main duty of the Night Watch is to guard the Wall. Also, keywords in Topic 3 include other languages spoken by Dany, as she is ruling many people of different cultures and races. Another good example is the Topic 2 of Cersei include keywords like "love", "brother", and "daughter", while Cersei has a relationship and affair with her twin brother Jaime Lannister.
+![img2](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic2.png){: .center-block :}
+![img3](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic3.png)
 
 
 

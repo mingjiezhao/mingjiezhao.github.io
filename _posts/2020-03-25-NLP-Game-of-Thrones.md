@@ -2,7 +2,7 @@
 layout: post
 title: NLP Analysis for Game of Thones (1)
 subtitle: Pre-processing, word frequency analysis and LDA
-gh-repo: daattali/beautiful-jekyll
+gh-repo: mingjiezhao/Game_of_thrones
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
@@ -31,12 +31,12 @@ Latent Dirichlet Allocation (LDA) is a widely used model in natural language pro
 
 It's interesting to see that some of the topics correlate closely with the show. For example, the third topic of Jon includes key words like "wall", "night" and "watch". This probably correlates with the story that Jon has served in the Night Watch, first as a personal steward of the then Lord Commander, and then became a Lord Commander of the Night Watch himself. The main duty of the Night Watch is to guard the Wall. Also, keywords in Topic 3 include other languages spoken by Dany, as she is ruling many people of different cultures and races. Another good example is the Topic 2 of Cersei include keywords like "love"", "brother", and "daughter", while Cersei has a relationship and affair with her twin brother Jaime Lannister.
 ![img2](img/posts_imgs/post1-nlp/pic2.png){: .center-block :}
-![img3](img/posts_imgs/post1-nlp/pic3.png){: .center-block :}
+![img3](img/posts_imgs/post1-nlp/pic3.png)
 
 
 
 
-Here's a useless table:
+<!-- Here's a useless table:
 
 | Number | Next number | Previous number |
 | :------ |:--- | :--- |
@@ -69,3 +69,4 @@ You can add notification, warning and error boxes like this:
 
 {: .box-error}
 **Error:** This is an error box.
+ -->

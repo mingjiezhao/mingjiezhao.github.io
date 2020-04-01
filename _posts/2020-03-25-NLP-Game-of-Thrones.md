@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NLP Analysis for Game of Thones
-subtitle: Part 1: Pre-processing, word frequency analysis and LDA
+subtitle: Part 1- Pre-processing, word frequency analysis and LDA
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]

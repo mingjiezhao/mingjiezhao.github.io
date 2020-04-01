@@ -2,9 +2,9 @@
 layout: post
 title: NLP Analysis for Game of Thones (2)
 subtitle: Sentiment analysis and word cloud
-bigimg: https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_title_card.jpg
+bigimg: /img/posts_imgs/post1-nlp/Game_of_Thrones_title_card.jpg
 gh-repo: mingjiezhao/Game_of_thrones
-gh-badge: [star, fork, follow]
+<!-- gh-badge: [star, fork, follow] -->
 tags: [NLP]
 comments: true
 ---

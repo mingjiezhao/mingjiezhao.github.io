@@ -14,26 +14,33 @@ Many people around me are fans of Game of Thrones, and last summer I heard a lot
 
 Since this analysis is a bit long, I figured it would be better to break it down to two posts. This is the first half of the analysis, including the data processing, word frequency analysis and LDA (topics model). The second post focus on sentiment analysis and word cloud analysis, as well as some conclusions. 
 
-The analysis is made through R and the code is published in my [github](https://github.com/mingjiezhao/Game_of_thrones).
+The analysis is made through R and the code is published in my [Github](https://github.com/mingjiezhao/Game_of_thrones).
 
 ## 2. Methodology
 In this project, I picked four characters with the most lines. You may be wondering by now about who are the most talkative ones in this show. Well, the answer will be provided below in the analysis. Since characters may speak around certain topics based on their character settings, I created LDA (Latent Dirichlet Allocation) models of these 4 characters to see if there are main topics from what they said. I also performed sentiment analysis on their words to see how they feel about by living in the fantastic world. Data visualizations are created by multiple plots and some findings are provided at the end of the project.
 
 ## 3. Anslysis
 ### 1) Data preprocessing
-Firstly, read in (a) dataset which was found on Github (json file provided by https://github.com/jeffreylancaster/game-of-thrones). The original dataset is a huge list of list and I manipulated the dataset to get a list of the characters and a new dataframe to count for numbers of sentence for each character. We can see that the average number of sentences in the show across all the characters is 181.5, while the most talktaive character said 1704 sentences. However, there are a lot of characters who only said one sentence in the show. And the 4 characters who are on my list of top 4 talktive ones are 
- -Tyrion Lannister 
- ![TL](https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg)
+Firstly, read in (a) dataset which was found on Github ([json file](https://github.com/jeffreylancaster/game-of-thrones)). The original dataset is a huge list of list and I manipulated the dataset to get a list of the characters and a new dataframe to count for numbers of sentence for each character. We can see that the average number of sentences in the show across all the characters is 181.5, while the most talktaive character said 1704 sentences. However, there are a lot of characters who only said one sentence in the show. And the 4 characters who are on my list of top 4 talktive ones are
 
- -Jon Snow  
- ![JS](https://upload.wikimedia.org/wikipedia/en/3/30/Jon_Snow_Season_8.png)
+<table border="1">
+<tbody>
+<tr>
+<td>Tyrion Lannister</td>
+<td>Jon Snow</td>
+<td>Daenerys Targaryen</td>
+<td>Cersei Lannister</td>
+</tr>
+<tr>
+<td><img src="https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg" alt="1" width="255" height="393" /></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/en/3/30/Jon_Snow_Season_8.png" alt="" width="263" height="378" /></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg/330px-Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg" alt="" width="379" height="265" /></td>
+<td><img src="https://upload.wikimedia.org/wikipedia/en/2/22/Cersei_Lannister_in_Black_Dress_in_Season_5.jpg" alt="" width="244" height="409" /></td>
+</tr>
+</tbody>
+</table>
 
- - Daenerys Targaryen 
- ![DT](https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg/330px-Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg)
-
- -Cersei Lannister 
- ![CL](https://upload.wikimedia.org/wikipedia/en/2/22/Cersei_Lannister_in_Black_Dress_in_Season_5.jpg)
-
+ 
 I hope this is not a surprising result to you if you are a fan, because what they've said would be very important here in my analysis below.
 
 

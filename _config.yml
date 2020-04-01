@@ -25,7 +25,7 @@ description: M.S. student in Statistics at Duke University
 navbar-links:
   About Me: "aboutme"
   Projects: "projects"
-  Blog: "blog"
+  # Blog: "blog"
   CV: "CV"
   # Resources:
     # - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
@@ -92,7 +92,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-# url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "http://mingjiezhao.com"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments

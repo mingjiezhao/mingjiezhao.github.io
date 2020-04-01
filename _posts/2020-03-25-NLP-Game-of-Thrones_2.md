@@ -6,7 +6,6 @@ gh-repo: mingjiezhao/Game_of_thrones
 gh-badge: [star, fork, follow]
 tags: [NLP]
 comments: true
-bigimg:/img/posts_imgs/post1-nlp/Game_of_Thrones_title_card.jpg
 ---
 
 ## 1. Overview

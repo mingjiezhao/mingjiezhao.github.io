@@ -6,6 +6,7 @@ gh-repo: mingjiezhao/Game_of_thrones
 gh-badge: [star, fork, follow]
 tags: [NLP]
 comments: true
+bigimg:https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_title_card.jpg
 ---
 
 ## 1. Introduction

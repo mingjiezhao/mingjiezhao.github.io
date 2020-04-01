@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NLP Analysis for Game of Thones
-subtitle: Part 1- Pre-processing, word frequency analysis and LDA
+title: NLP Analysis for Game of Thones (1)
+subtitle: Pre-processing, word frequency analysis and LDA
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
@@ -24,6 +24,8 @@ Firstly, read in (a) dataset which was found on Github (json file provided by ht
 ### 2) Word frequency analysis
 To deal with the text data, I created a function to do data manipulation including removing punctuation, numbers and stopwords. I also did word stemming to remove affixes. Then I created a chart to show which words are used the most by these characters. It's interesting to see that these top words are highly correlated with each character's background. For example, Tyrion used "king" and "father" a lot, because he spent a lot of court business dealing with nobles. Also Tyrion lived in the shadow of his father Tywin Lannister for a long time, until he killed his own father. Daenerys liked to say "dragon" and "people", since she is the mother of three dragons, and is considered to be the "Mother of dragons". And  Cersei was the ruling queen of the seven kingdoms, until losing it to Dany. She married King Robert, and is mother of two kings. That may explain her favorite words like "king", "father" and "love".
 ![img1](img/posts_imgs/post1-nlp/pic1.png){: .center-block :}
+![Game of Thrones pic](img/Tyrion_senti.png)
+
 ### 3) LDA and topic model
 Latent Dirichlet Allocation (LDA) is a widely used model in natural language processing (NLP) as an unsupervised learning method. In this project, I am trying to find 3 topics for each character. A function was written to perform the LDA modeling and a chart was plotted for the top 4 words in the 3 topics, to visualize the results and understand the topics that were extracted from these words.
 

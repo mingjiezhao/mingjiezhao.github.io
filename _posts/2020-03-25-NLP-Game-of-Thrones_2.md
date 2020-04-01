@@ -4,7 +4,6 @@ title: NLP Analysis for Game of Thones (2)
 subtitle: Sentiment analysis and word cloud
 bigimg: /img/posts_imgs/post1-nlp/Game_of_Thrones_title_card.jpg
 tags: [NLP]
-comments: true
 ---
 
 ## 1. Overview
@@ -24,13 +23,13 @@ It is also insightful to perform setiment analysis to check emotions within the 
 
 ## 3. Word cloud
 Last but not least, I created a word cloud for each character to visualize the emotional words in lines. We can see that on the negative side, "kill" and "die" are really eyes-catching, while "love" and "grace" pop up in the positive side.
-Tyrion Lannister
+-Tyrion Lannister
 ![img8](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic8.png?raw=true){: .center-block :}
-Jon Snow
+-Jon Snow
 ![img9](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic9.png?raw=true){: .center-block :}
-Daenerys Targaryen
+-Daenerys Targaryen
 ![img10](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic10.png?raw=true){: .center-block :}
-Cersei Lannister
+-Cersei Lannister
 ![img11](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic11.png?raw=true){: .center-block :}
 
 ## 4. Conclusions

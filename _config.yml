@@ -49,10 +49,17 @@ navbar-links:
 author:
   name: mingjiezhao
   email: "mz136@duke.edu"
+
+social-network-links:
+  rss: true
+  email: "mingjie.zhao@duke.edu"
+  # facebook: deanattali
+  github: mingjiezhao
+  twitter: mingjiezhao
 #   facebook:   # eg. daattali
-  github: mingjiezhao    # eg. daattali
+  # github: mingjiezhao    # eg. daattali
   # twitter: yourname   # eg. daattali
-  linkedin: mingjiezhao  # eg. daattali
+  # linkedin: mingjiezhao  # eg. daattali
   # snapchat: yourname  # eg. daattali
   # instagram: yourname # eg. daattali
   # youtube: yourlink   # eg. user/daattali or channel/daattali

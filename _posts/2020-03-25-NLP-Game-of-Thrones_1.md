@@ -32,10 +32,10 @@ Firstly, read in (a) dataset which was found on Github ([json file](https://gith
 <td style="width: 116px;">Cersei Lannister</td>
 </tr>
 <tr>
-<td style="width: 114px;"><img src="https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg" alt="1" width="110" height="168" /></td>
-<td style="width: 120px;"><img src="https://upload.wikimedia.org/wikipedia/en/3/30/Jon_Snow_Season_8.png" alt="" width="118" height="169" /></td>
+<td style="width: 114px;"><img src="https://upload.wikimedia.org/wikipedia/en/5/50/Tyrion_Lannister-Peter_Dinklage.jpg" alt="1" width="129" height="197" /></td>
+<td style="width: 120px;"><img src="https://upload.wikimedia.org/wikipedia/en/3/30/Jon_Snow_Season_8.png" alt="" width="135" height="193" /></td>
 <td style="width: 202px;"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg/330px-Daenerys_Targaryen_with_Dragon-Emilia_Clarke.jpg" alt="" width="198" height="139" /></td>
-<td style="width: 116px;"><img src="https://upload.wikimedia.org/wikipedia/en/2/22/Cersei_Lannister_in_Black_Dress_in_Season_5.jpg" alt="" width="101" height="170" /></td>
+<td style="width: 116px;"><img src="https://upload.wikimedia.org/wikipedia/en/2/22/Cersei_Lannister_in_Black_Dress_in_Season_5.jpg" alt="" width="124" height="209" /></td>
 </tr>
 </tbody>
 </table>

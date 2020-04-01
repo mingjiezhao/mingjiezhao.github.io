@@ -6,7 +6,6 @@ gh-repo: mingjiezhao/Game_of_thrones
 gh-badge: [star, fork, follow]
 tags: [NLP]
 comments: true
-
 ---
 
 ## 1. Introduction

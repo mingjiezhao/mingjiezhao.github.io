@@ -3,10 +3,10 @@ layout: post
 title: NLP Analysis for Game of Thones (1)
 subtitle: Pre-processing, word frequency analysis and LDA
 gh-repo: mingjiezhao/Game_of_thrones
-gh-badge: [star, fork, follow]
+<!-- gh-badge: [star, fork, follow] -->
 tags: [NLP]
 comments: true
-bigimg:https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_title_card.jpg
+bigimg:(https://upload.wikimedia.org/wikipedia/en/d/d8/Game_of_Thrones_title_card.jpg)
 ---
 
 ## 1. Introduction

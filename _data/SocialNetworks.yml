@@ -95,3 +95,9 @@ yelp:
   name: "Yelp"
   baseURL: "https://{{ site.author.yelp }}.yelp.com"
   icon: "fa-yelp"
+
+
+calendly:
+  name: "calendly"
+  baseURL: "https://calendly.com/"
+  icon: "fa-fas fa-calendar-alt"

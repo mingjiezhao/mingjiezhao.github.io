@@ -55,7 +55,7 @@ social-network-links:
   email: ""
   # facebook: deanattali
   github: 
-  # twitter: mingjiezhao
+  twitter: MingjieZhao3
 #   facebook:   # eg. daattali
   # github: mingjiezhao    # eg. daattali
   # twitter: yourname   # eg. daattali
@@ -68,13 +68,15 @@ social-network-links:
   # steam: yourname     # eg. daattali
   # twitch: yourname    # eg. daattali
   # yelp: yourname      # eg. daattali
+  calendly: "https://calendly.com/mingjie_zhao/30min"
 
 # Select which links to show in the footer
 footer-links-active:
   rss: true
+  calendly: true
   facebook: false
   email: true
-  twitter: false
+  twitter: true
   google-plus: false
   github: true
   reddit: false

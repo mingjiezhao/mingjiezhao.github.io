@@ -100,4 +100,4 @@ yelp:
 calendly:
   name: "calendly"
   baseURL: "https://calendly.com/"
-  icon: "fa-calendar-alt"
+  icon: "fa fa-calendar"

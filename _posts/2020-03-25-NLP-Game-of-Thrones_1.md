@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NLP Analysis for Game of Thones (1)
+title: NLP Analysis for Game of Thrones (1)
 subtitle: Pre-processing, word frequency analysis and LDA
 bigimg: /img/posts_imgs/post1-nlp/Game_of_Thrones_title_card.jpg
 gh-repo: mingjiezhao/Game_of_thrones

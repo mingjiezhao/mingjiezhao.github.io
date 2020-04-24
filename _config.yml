@@ -37,7 +37,7 @@ navbar-links:
 # Remove this parameter if you don't want an image in the navbar
 # avatar: "/img/Image_1 2019-06-04_21-39-33.jpeg"
   Consulting Services: "ConsultingServices"
-  blog: "blog"
+  # blog: "blog"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter

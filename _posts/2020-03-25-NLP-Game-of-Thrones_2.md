@@ -37,7 +37,7 @@ Last but not least, I created a word cloud for each character to visualize the e
 ![img11](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/post1-nlp/pic11.png?raw=true){: .center-block :}
 
 ## 4. Conclusions
-In this project, I used 5 ways to analyze the lines from Game of Thrones with NLP techniques. As a summary the LDA and topic model do a good job in terms of representing the stories of each character. The sentiment analyses provide insights about the emotions of these characters. It is interesting to see that most of the results correspond to the background of the chatacters. This show mostly provides the audience with negative emotions, but I am happy to see that love is the most used positive word.
+In this project, I used 5 ways to analyze the lines from Game of Thrones with NLP techniques. As a summary， the LDA and topic model do a good job in terms of representing the stories of each character. The sentiment analyses provide insights about the emotions of these characters. It is interesting to see that most of the results correspond to the background of the characters. This show mostly provides the audience with negative emotions, but I am happy to see that love is the most used positive word.
 
 ## Reference
 Julia Silge and David Robinson,"Text Mining with R"

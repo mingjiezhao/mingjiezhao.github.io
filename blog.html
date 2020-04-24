@@ -4,8 +4,15 @@ title: Blog Posts
 subtitle: Data Science 
 use-site-title: true
 ---
-
-
+<h1>Welcome to my website!</h1>
+<p>I am a Data Science Consultant and obtaining my M.S. in Statistical Science from Duke University in May 2020.</p>
+<p>I am passionate about data science and artificial intelligence. Therefore, I enjoy using my programming and statistical knowledge to build up small tools and analyze some interesting datasets.</p>
+<p>Click <strong><a href="https://mingjiezhao.github.io/projects/">Projects</a></strong>&nbsp;for more details.</p>
+<p>Life is more than studying and working. I am always working on self-development to enrich my life!</p>
+<p>Click <a href="https://mingjiezhao.github.io/aboutme/"><strong>About Me</strong></a>&nbsp;for more details.</p>
+<h2>Free Data Science consulting services for the energy industry</h2>
+<p>With 3 years of professional experience working in both a national lab and consulting firm, I have accumulated extensive experiences in handling data-oriented energy-related projects. I am providing <strong>FREE</strong> data science consulting services for companies and individuals in the energy industry.</p>
+<p>Click <a href="https://mingjiezhao.github.io/ConsultingServices/"><strong>Consulting Services</strong>&nbsp;</a>for more details and to make an appointment for the free consulting session.</p>
 
 <h1>My Blog Posts</h1>
 
@@ -13,13 +20,13 @@ use-site-title: true
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | relative_url }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+    <h2 class="post-title">{{ post.title }}</h2>
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
+    {% if post.subtitle %}
+    <h3 class="post-subtitle">
+      {{ post.subtitle }}
+    </h3>
+    {% endif %}
     </a>
 
     <p class="post-meta">
@@ -74,3 +81,24 @@ use-site-title: true
   {% endif %}
 </ul>
 {% endif %}
+
+<h1>Contact Me</h1>
+
+<form action="https://formspree.io/xvobzozy" method="POST" class="form" id="contact-form">
+  <p>I love meeting new people and you can <a href="mailto:mingjie.zhao@duke.edu?subject=Hello from mingjiezhao.com">email me</a> or reach me on social media buttons at the end of the page. You can also send me a quick message using the form below:</p>
+  <div class="row">
+    <div class="col-xs-6">
+      <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">
+    </div>
+    <div class="col-xs-6">
+      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name">
+    </div>
+  </div>
+  <input type="hidden" name="_subject" value="New submission from mingjiezhao.com">
+  <textarea type="text" name="content" class="form-control input-lg" placeholder="Message" title="Message" required="required" rows="3"></textarea>
+  <input type="text" name="_gotcha" style="display:none">
+  <input type="hidden" name="_next" value="?message=Your message was sent successfully, thanks!" />
+  
+    
+  <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+</form>

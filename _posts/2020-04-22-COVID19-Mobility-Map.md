@@ -18,5 +18,5 @@ The app includes 2 main charts: (1) a line chart showing COVID-19 cases or perce
 The raw data of COVID-19 cases is provided by JHU CSSE, which include both confirmed cases and death.
 The raw data of percentage changes is from Google who used the same kind of aggregated and anonymized data for popular times of places in Google Maps. Changes for each day are compared to a baseline value for that day of the week, which is the median value for the corresponding day of the week.
 
-## 3. insights from the data
+## 3. Insights from the data
 It can be seen that though the number of confirmed cases have different magnitudes for different states, the trends of percentage mobility change are very similar. Starting mid-March, most states announced "stay-at-home" orders and closed most non-essential places. The social distance is well represented by the drops of mobility in places such as "retail & recreation" and "workplace". Since most people are encouraged to stay home, the percentage changes in residential places have dramatically increased for most states. However, people tend to leave the residential places on weekends.  

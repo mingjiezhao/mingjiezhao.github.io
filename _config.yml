@@ -37,6 +37,7 @@ navbar-links:
 # Remove this parameter if you don't want an image in the navbar
 # avatar: "/img/Image_1 2019-06-04_21-39-33.jpeg"
   Consulting Services: "ConsultingServices"
+  Blog: "blog"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -68,7 +69,7 @@ social-network-links:
   # steam: yourname     # eg. daattali
   # twitch: yourname    # eg. daattali
   # yelp: yourname      # eg. daattali
-  calendly: "mingjie_zhao/30min"
+  calendly: "mingjie_zhao/60min"
 
 # Select which links to show in the footer
 footer-links-active:

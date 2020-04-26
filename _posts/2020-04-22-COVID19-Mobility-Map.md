@@ -87,10 +87,10 @@ After living NC for almost 2 years, I found myself really like this state for a 
 
 *Image references:*
 
--[img1](https://patch.com/new-york/new-york-city/new-yorks-stay-home-order-goes-effect)
+[img1](https://patch.com/new-york/new-york-city/new-yorks-stay-home-order-goes-effect)
 
--![img2](https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/66K4GPTJUII6VMMZHKLZTRKFCI.jpg)
+[img2](https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/66K4GPTJUII6VMMZHKLZTRKFCI.jpg)
 
--![img3](https://pbs.twimg.com/media/EThMd2fXsAMyIop?format=jpg)
+[img3](https://pbs.twimg.com/media/EThMd2fXsAMyIop?format=jpg)
 
 

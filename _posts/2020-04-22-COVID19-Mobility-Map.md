@@ -7,7 +7,7 @@ comments: true
 ---
 
 ## 1. Introduction
-The COVID-19 pandemic has changed everyone's life. While self-isolated as most people, I do feel lucky that I am living in a society that many heroes are fighting with the virus in many ways. Though I cannot be as helpful as our heroes like the doctors and nurses, I did find a way to contribute a little bit--by using my data science skills. Therefore, I plan to work on a series of data science projects regarding to the COVID-19, hopefully I could provide some insights with a perspective of a data scientist.
+The COVID-19 pandemic has changed everyone's life. While self-isolated as most people, I do feel lucky that I am living in a society where many heroes are fighting with the virus in many ways. Though I cannot be as helpful as our heroes like the doctors and nurses, I did find a way to contribute a little bit--by using my data science skills. Therefore, I plan to work on a series of data science projects regarding to the COVID-19; hopefully I could provide some insights with the perspective of a data scientist.
 
 This is the first project in this **COVID-19** series. I collaborate with [Wentao Duan](https://github.com/wduan31) to create [an interactive dash app](https://covid-19-mobility-map.herokuapp.com/) using Python. This app aims to provide visualizations of COVID-19 cases and mobility change during 2020-02-15 to 2020-04-11 in the U.S. The raw data is provided by JHU CSSE and Google.
 
@@ -40,7 +40,7 @@ Two charts are provided by this app:
 
 ## 3. Insights from the data
 ### Overview
-It can be seen that though the number of confirmed cases have different magnitudes for different states, the trends of percentage mobility change can be very similar. Starting mid-March, most states announced "stay-at-home" orders and closed most non-essential places. The social distance is well represented by the drops of mobility in places such as "retail & recreation" and "workplace". Since most people are encouraged to stay home, the percentage changes in residential places have dramatically increased for most states. However, people tend to leave the residential places on weekends.  
+It can be seen that though the number of confirmed cases have different magnitudes for different states, the trends of percentage mobility change can be very similar. Starting mid-March, most states announced "stay-at-home" orders and closed most non-essential places. The social distance is well represented by the drops of mobility in places such as "retail & recreation" and "workplace". Since most people are encouraged to stay home, the percent changes in residential places have dramatically increased for most states. However, people tend to leave the residential places on weekends.  
 
 ### Observations for selected states
 #### New York
@@ -57,7 +57,7 @@ New York's statewide stay-at-home order went into effect on Mar. 22nd, but the N
 
 <!-- <p style="text-align: center;"><img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/66K4GPTJUII6VMMZHKLZTRKFCI.jpg&amp;name=small" alt="1" width="329" height="237" /></p> -->
 
-As the first state which officially reported an outburst, it is interesting to see that the mobility in workplaces dropped to -35% of the baseline on Feb. 17th, showing signs of public concerns about the COVID-19. However, people get back to normal schedule in workplaces since then, until the mobility largely decreased again around Mar. 9th. 
+As the first state which officially reported an outbreak, it is interesting to see that the mobility in workplaces dropped to -35% of the baseline on Feb. 17th, showing signs of public concerns about the COVID-19. However, people resumed normal schedulesss to workplaces since then, until the mobility largely decreased again around Mar. 9th. 
 
 It is also interesting to see that until Mar. 23rd, people increased visits to the parks. On Mar. 18th, the mobility in park is +93% compared to the baseline. As a hiker who lived in WA for 2 years, I know that there are a number of great trails in WA, especially in the amazing national parks including Olymic, Mountain Rainer (my favorite!), and North Cascades. But I am still surprised to see people visit parks more often during this time. After some research, I found that this may be because the Trump administration was waiving entrance fees at national parks, from the [news](https://www.washingtonpost.com/climate-environment/2020/03/19/national-parks-fees-waived/). Starting Apr.4th, the mobility in parks jump to be higher than the baseline again while the numbers of COVID-19 cases have been still increasing. Washington hikers, please stay healthy and leave no trace!
 
@@ -67,9 +67,9 @@ It is also interesting to see that until Mar. 23rd, people increased visits to t
 <!-- <p style="text-align: center;"><img src="https://pbs.twimg.com/media/EThMd2fXsAMyIop?format=jpg&amp;name=small" alt="1" width="329" height="237" /></p> -->
 
 
-As another state which owns numerous parks and hiking trails, it's a bit surprising to see the mobility in parks dropped below baseline since Mar. 11th. My guess is most of the visitors to CA parks are not from local residents. Tourism industry has been destroyed by the pandemic for sure. 
+As another state which owns numerous parks and hiking trails, it's a bit surprising to see the mobility in parks dropped below baseline since Mar. 11th. My guess is most of the visitors to CA parks are not local residents. The tourism industry has been destroyed by the pandemic for sure. 
 
-Though the statewide stay-at-home order was issued on Mar. 19th, people had been dramatically decrease their stay in workplaces since Mar. 10th. This may be because as the home of many tech companies, it's relatively easier for employees in tech industry to work from home.
+Though the statewide stay-at-home order was issued on Mar. 19th, people had been dramatically decreasing their stay in workplaces since Mar. 10th. This may be because as the home of many tech companies, it's relatively easier for employees in tech industry to work from home.
 
 #### North Carolina
 *keywords*: parks

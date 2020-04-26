@@ -85,12 +85,5 @@ Though the statewide stay-at-home order was issued on Mar. 19th, people had been
 After living NC for almost 2 years, I found myself really like this state for a number of reasons. Although the state-wide "stay at home" order was issued late in March, NC residents had been taking actions since mid-March, represented by the deep drop of mobility of retail, workplaces and transit stations. Similar to WA residents, people still visit the parks a lot during this time, and the mobility changes are around +40% to +60% from Mar. 8th to Mar. 27th. The beautiful Duke garden is famous for the cherry blossom in springtime (pic above), and this year it barely got any visitors.
 
 
-*Image references:*
-
-[img1](https://patch.com/new-york/new-york-city/new-yorks-stay-home-order-goes-effect)
-
-[img2](https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/66K4GPTJUII6VMMZHKLZTRKFCI.jpg)
-
-[img3](https://pbs.twimg.com/media/EThMd2fXsAMyIop?format=jpg)
 
 

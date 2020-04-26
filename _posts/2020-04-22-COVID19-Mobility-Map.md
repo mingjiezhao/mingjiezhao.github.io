@@ -35,6 +35,7 @@ Two charts are provided by this app:
 ### Raw data resources
 
 (1) The raw data of COVID-19 cases is provided by JHU CSSE, which include both confirmed cases and death.
+
 (2) The raw data of percentage changes is from Google who used the same kind of aggregated and anonymized data for popular times of places in Google Maps. Changes for each day are compared to a baseline value for that day of the week, which is the median value for the corresponding day of the week.
 
 ## 3. Insights from the data
@@ -43,30 +44,36 @@ It can be seen that though the number of confirmed cases have different magnitud
 
 ### Observations for selected states
 #### New York
-*keywords*: public transition
-New York's statewide stay-at-home order went into effect on Mar. 22nd, but the New Yorkers' lives started to change much earlier than the order. Mobility in transition stations started to drop as early as on Mar. 9th. People started to spend more time at home and less time in parks since Mar. 15th. Among all the places, the mobility in transition stations decreased the most, with a -72% drop on Apr. 9th compared to the baseline.
+*keywords*: public transit
 
-<td style="width: 114px;"><img src="https://patch.com/img/cdn20/shutterstock/23224711/20200322/070133/styles/patch_image/public/shutterstock-editorial-10590677p___22190019141.jpg" alt="1" width="329" height="197" /></td>
+<p style="text-align: center;"><img src="https://patch.com/img/cdn20/shutterstock/23224711/20200322/070133/styles/patch_image/public/shutterstock-editorial-10590677p___22190019141.jpg" alt="1" width="329" height="197" /></td>
+
+New York's statewide stay-at-home order went into effect on Mar. 22nd, but the New Yorkers' lives started to change much earlier than the order. Mobility in transit stations started to drop as early as on Mar. 9th. People started to spend more time at home and less time in parks since Mar. 15th. Among all the places, the mobility in transit stations decreased the most, with a -72% drop on Apr. 9th compared to the baseline.
 
 #### Washington
 *keywords*: parks
+
+<p style="text-align: center;"><img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/66K4GPTJUII6VMMZHKLZTRKFCI.jpg" alt="1" width="429" height="297" /></td>
+
 As the first state which officially reported an outburst, it is interesting to see that the mobility in workplaces dropped to -35% of the baseline on Feb. 17th, showing signs of public concerns about the COVID-19. However, people get back to normal schedule in workplaces since then, until the mobility largely decreased again around Mar. 9th. 
 
 It is also interesting to see that until Mar. 23rd, people increased visits to the parks. On Mar. 18th, the mobility in park is +93% compared to the baseline. As a hiker who lived in WA for 2 years, I know that there are a number of great trails in WA, especially in the amazing national parks including Olymic, Mountain Rainer (my favorite!), and North Cascades. But I am still surprised to see people visit parks more often during this time. After some research, I found that this may be because the Trump administration was waiving entrance fees at national parks, from the [news](https://www.washingtonpost.com/climate-environment/2020/03/19/national-parks-fees-waived/). Starting Apr.4th, the mobility in parks jump to be higher than the baseline again while the numbers of COVID-19 cases have been still increasing. Washington hikers, please stay healthy and leave no trace!
-<td style="width: 114px;"><img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/66K4GPTJUII6VMMZHKLZTRKFCI.jpg" alt="1" width="429" height="297" /></td>
 
 #### California
 *keywords*: Tourism, tech industry
+
+<p style="text-align: center;"><img src="https://pbs.twimg.com/media/EThMd2fXsAMyIop?format=jpg&name=small" alt="1" width="329" height="237" /></td>
+
 As another state which owns numerous parks and hiking trails, it's a bit surprising to see the mobility in parks dropped below baseline since Mar. 11th. My guess is most of the visitors to CA parks are not from local residents. Tourism industry has been destroyed by the pandemic for sure. 
 
 Though the statewide stay-at-home order was issued on Mar. 19th, people had been dramatically decrease their stay in workplaces since Mar. 10th. This may be because as the home of many tech companies, it's relatively easier for employees in tech industry to work from home.
-<td style="width: 114px;"><img src="https://pbs.twimg.com/media/EThMd2fXsAMyIop?format=jpg&name=small" alt="1" width="329" height="237" /></td>
 
 #### North Carolina
 *keywords*: parks
+![img2](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/cherry_blossom.jpg?raw=true){: .center-block :}
+
 After living NC for almost 2 years, I found myself really like this state for a number of reasons. Although the state-wide "stay at home" order was issued late in March, NC residents had been taking actions since mid-March, represented by the deep drop of mobility of retail, workplaces and transit stations. Similar to WA residents, people still visit the parks a lot during this time, and the mobility changes are around +40% to +60% from Mar. 8th to Mar. 27th. The beautiful Duke garden is famous for the cherry blossom in springtime (pic below), and this year it barely got any visitors.
 
-![img2](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/cherry_blossom.jepg?raw=true){: .center-block :}
 
 *Image references:*
 https://patch.com/new-york/new-york-city/new-yorks-stay-home-order-goes-effect

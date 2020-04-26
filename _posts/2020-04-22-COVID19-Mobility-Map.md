@@ -48,7 +48,7 @@ It can be seen that though the number of confirmed cases have different magnitud
 
 <!-- <p><img src="https://patch.com/img/cdn20/shutterstock/23224711/20200322/070133/styles/patch_image/public/shutterstock-editorial-10590677p___22190019141.jpg&amp;name=small" alt="1" width="329" height="237" /></p> -->
 
- <p style="text-align: center;"><img src="https://patch.com/img/cdn20/shutterstock/23224711/20200322/070133/styles/patch_image/public/shutterstock-editorial-10590677p___22190019141.jpg" alt="1" width="329" height="197"/><p>
+ <p style="text-align: center;"><img src="https://i.dailymail.co.uk/1s/2020/03/22/15/26266672-8139923-image-m-59_1584890869653.jpg" alt="1" width="329" height="197"/><p>
  
  
 New York's statewide stay-at-home order went into effect on Mar. 22nd, but the New Yorkers' lives started to change much earlier than the order. Mobility in transit stations started to drop as early as on Mar. 9th. People started to spend more time at home and less time in parks since Mar. 15th. Among all the places, the mobility in transit stations decreased the most, with a -72% drop on Apr. 9th compared to the baseline.
@@ -87,10 +87,10 @@ After living NC for almost 2 years, I found myself really like this state for a 
 
 *Image references:*
 
--https://patch.com/new-york/new-york-city/new-yorks-stay-home-order-goes-effect
+-[img1](https://patch.com/new-york/new-york-city/new-yorks-stay-home-order-goes-effect)
 
--https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/66K4GPTJUII6VMMZHKLZTRKFCI.jpg
+-![img2](https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/66K4GPTJUII6VMMZHKLZTRKFCI.jpg)
 
--https://pbs.twimg.com/media/EThMd2fXsAMyIop?format=jpg
+-![img3](https://pbs.twimg.com/media/EThMd2fXsAMyIop?format=jpg)
 
 

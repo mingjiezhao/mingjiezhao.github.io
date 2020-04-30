@@ -5,6 +5,7 @@ subtitle: An interactive dash app
 tags: [COVID-19]
 comments: true
 ---
+Try the tool [here](https://covid-19-mobility-map.herokuapp.com/)
 
 ## 1. Introduction
 The COVID-19 pandemic has changed everyone's life. While self-isolated as most people, I do feel lucky that I am living in a society where many heroes are fighting with the virus in many ways. Though I cannot be as helpful as our heroes like the doctors and nurses, I did find a way to contribute a little bit--by using my data science skills. Therefore, I plan to work on a series of data science projects regarding to the COVID-19; hopefully I could provide some insights with the perspective of a data scientist.

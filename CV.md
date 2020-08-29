@@ -4,6 +4,8 @@ title: CV
 subtitle: 
 ---
 #### Experiences
+- Data Scientist, Wells Fargo, NC
+
 - Data Science Consultant, Self-employed, NC
 
 - Summer Intern, State Farm, GA
@@ -21,7 +23,7 @@ subtitle:
 
 - Duke University, Durham, NC       
 
-	Major in Statistical Science, Expected graduation: May 2020
+	Major in Statistical Science
 
 - The Pennsylvania State University, University Park, PA    
 

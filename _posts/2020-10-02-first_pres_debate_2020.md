@@ -9,10 +9,12 @@ I am wondering how many people played or at least saw pics of the “drinking ga
 
 Well, no worries. If you feel your friends and/or families ever cheated in the drinking game, or you are not sure how much alcohol you need to purchase for the next presidential debate on Oct. 15 (well, I mean if there will be one), I am here to provide you with some suggestions on how many shots they should have taken and how many bottles you need (based on data analysis). Show them this post and ask them to make it up if they cheated in drinking!
 
+I am using this drinking game from the [internet](https://www.barstoolsports.com/blog/2916035/hard-factor-presidential-debate-watch-party-with-pft-commenter-and-cousin-mike)
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/first_debate/drinking-game-debate.jpeg?raw=true){: .center-block :}
 Hint: Though I don’t know who won the debate, I am pretty sure most people would lose in the drinking game, or got too drunk to survive the whole show.
 
 This analysis is based on the data provided by [Kaggle](https://www.kaggle.com/theogoe/first-pres-debate-2020). This dataset records sentences from each speaker (Trump, Biden and Wallce), time spoken, words per minute, and number of words. First, I made some simple pie charts to figure out who was the most talkative guy. It’s easy to tell these 3 pie charts look similar, where Trump said the most words and sentences (not surprising). Biden had slightly longer talking time, though he said less sentences. 
-```csharp
+```python
 n_sen =df.groupby('speaker').agg({"text":'count'}).reset_index()
 n_words =df.groupby('speaker').agg({"num_words":'sum'}).reset_index()
 speak_time =df.groupby('speaker').agg({"seconds_spoken":'sum'}).reset_index()
@@ -43,7 +45,7 @@ Pie chart 3: speak time
 
 
 Then I focused my analysis on what they said. I did some manipulation to the text data, since while dealing with natural language, we need to perform the pre-processing work like removing punctuation (note: did not to do lemmatization because it would remove "on" from "come on", which is a keyword used later. I may need to revise this part of script in future). After this process, I got a dataframe with 2 columns and 3 rows, with the rows indicating the speakers' text. 
-```csharp
+```python
 # Lowercase the sentences
 df['cleaned']=df['text'].apply(lambda x: x.lower())
 # Remove digits and words containing digits
@@ -56,7 +58,7 @@ df1.columns.values[1] = 'words'
 ```
 
 In NLP analysis, it never hurt to check the word cloud to get a general idea about who said what. 
-```csharp
+```python
 # Function for generating word clouds
 def generate_wordcloud(df):
     '''generate wold could given speaker'''
@@ -75,7 +77,7 @@ generate_wordcloud(df1)
 
 ![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/first_debate/cloud.png?raw=true){: .center-block :} 
 OK, here’s the main fun part. Based on the drinking game, I create 3 keywords list, 2 for each candidate and one for them both. I assume you needed to have shot when a keyword is mentioned. So I calculated the number of shots based on the game rules as followed.
-```csharp
+```python
 # create a list of key words for both candidates based on the drinking game rules
 trump_key = ['china', 'hunter','fake news', 'great', 'sleepy joe', 'witch hunt', 'space force', 'vaccine']
 biden_key = ['malarkey', 'mask', "senate", "vp", 'tax return', 'russia', 'putin', 'come on']
@@ -100,3 +102,7 @@ Too many numbers! So how many shots should you take? For Trump's side, it’s 52
 OMG! I feel so lucky with my alcohol tolerance. After all I am not willing to pay for so many bottles for a drinking game!
 
 Hopefully you’ve got some idea about how many bottles you need to get for the next game, oh I mean debate. Make the alcohol industry *GREAT* again!
+
+References:
+
+The speakers' pics are from https://our-cartoon-president.fandom.com/wiki/

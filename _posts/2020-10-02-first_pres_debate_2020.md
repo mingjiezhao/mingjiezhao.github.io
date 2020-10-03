@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Did your friend cheat in the drinking game for the 1st Presendential Debate 2020?
+title: Did your friend cheat in the drinking game for the 1st Presidential Debate 2020?
 subtitle: An Exploration with Python 
 tags: [2020 Election]
 comments: true

@@ -5,7 +5,7 @@ subtitle: An Exploration with Python
 tags: [2020 Election]
 comments: true
 ---
-I am wondering how many people played or at least saw pics of the “drinking game” designed for the first presidential debate of 2020. As a person who has extremely low alcohol tolerance, I know I would never win this, or any drinking game. However, it did reduce any entertainment I got from the super debate show. I am not sure if you could recognize every single key work for shots when watching the debate alive, I guess people would cheat purposely (too many keywords were hit) or unintentionally (when they talk all together, could you really tell who said what?).
+I am wondering how many people played or at least saw pics of the “drinking game” designed for the first presidential debate of 2020. As a person who has extremely low alcohol tolerance (2 beers), I know I would never win this, or any drinking game. However, it did reduce any entertainment I got from the super debate show. I am not sure if you could recognize every single key work for shots when watching the debate alive, I guess people would cheat purposely (too many keywords were hit) or unintentionally (when they talk all together, could you really tell who said what?).
 
 Well, no worries. If you feel your friends and/or families ever cheated in the drinking game, or you are not sure how much alcohol you need to purchase for the next presidential debate on Oct. 15 (well, I mean if there will be one), I am here to provide you with some suggestions on how many shots they should have taken and how many bottles you need (based on data analysis). Show them this post and ask them to make it up if they cheated in drinking!
 
@@ -34,11 +34,7 @@ def pie_chart(var):
     return
 ```
 
-Pie chart 1: number of sentences
-
-Pie chart 2: number of words
-
-Pie chart 3: speak time
+Pie charts: 1) number of sentences, 2) number of words, 3) speak time
 
  
   ![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/first_debate/all_pie.png?raw=true){: .center-block :}

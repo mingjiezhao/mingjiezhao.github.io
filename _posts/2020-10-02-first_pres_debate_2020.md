@@ -95,10 +95,12 @@ def word_count(key_list,row_n, df1):
 Too many numbers! So how many shots should you take? For Trump's side, it’s 52 shots. For Biden’s side, it’s 36 shots. Based on Wiki, the smallest standard shot glasses is 1 fl oz(30ml), so that’s 52 fl oz (1560 ml) for Trump's side and 36 fl oz (10800 ml) for Biden’s side. Though I am not a drink expert, I googled and found a popular bottle of Tequila has 12.5 fl oz(375ml). Therefore:
 ![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/first_debate/bottles.png?raw=true){: .center-block :}
 
-OMG! I feel so lucky with my alcohol tolerance. After all I am not willing to pay for so many bottles for a drinking game!
+OMG! I feel so lucky with my alcohol tolerance. After all, I am not willing to pay for so many bottles for a drinking game!
 
-Hopefully you’ve got some idea about how many bottles you need to get for the next game, oh I mean debate. Make the alcohol industry *GREAT* again!
+Hopefully, you’ve got some idea about how many bottles you need to get for the next game, oh I mean debate. Make the alcohol industry *GREAT* again!
 
 References:
 
 The speakers' pics are from https://our-cartoon-president.fandom.com/wiki/
+
+Disclaimer: the views expressed herein are those of the author only; they do not necessarily reflect the views of other people or any organizations

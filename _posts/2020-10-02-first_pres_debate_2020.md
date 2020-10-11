@@ -5,15 +5,15 @@ subtitle: An Exploration with Python
 tags: [2020 Election]
 comments: true
 ---
-I am wondering how many people played or at least saw pics of the “drinking game” designed for the first presidential debate of 2020. As a person who has extremely low alcohol tolerance (2 beers), I know I would never win this, or any drinking game. However, it did reduce any entertainment I got from the super debate show. I am not sure if you could recognize every single key work for shots when watching the debate alive, I guess people would cheat purposely (too many keywords were hit) or unintentionally (when they talk all together, could you really tell who said what?).
+I am wondering how many people played or at least saw pics of the “drinking game” designed for the first presidential debate of 2020. As a person who has extremely low alcohol tolerance (2 beers), I know I would never win this, or any drinking game. However, it did not reduce any entertainment I got from the debate. I am not sure if you could recognize every single key work for shots when watching the debate alive, I guess people would cheat purposely (too many keywords were hit) or unintentionally (when they talk all together, could you really tell who said what?).
 
 Well, no worries. If you feel your friends and/or families ever cheated in the drinking game, or you are not sure how much alcohol you need to purchase for the next presidential debate on Oct. 15 (well, I mean if there will be one), I am here to provide you with some suggestions on how many shots they should have taken and how many bottles you need (based on data analysis). Show them this post and ask them to make it up if they cheated in drinking!
 
 I am using this drinking game from the [internet](https://www.barstoolsports.com/blog/2916035/hard-factor-presidential-debate-watch-party-with-pft-commenter-and-cousin-mike)
 ![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/first_debate/drinking-game-debate.jpeg?raw=true){: .center-block :}
-Hint: Though I don’t know who won the debate, I am pretty sure most people would lose in the drinking game, or got too drunk to survive the whole show.
+Hint: Though I don’t know who won the debate, I am pretty sure most people would lose in the drinking game, or get too drunk to survive the whole show.
 
-This analysis is based on the data provided by [Kaggle](https://www.kaggle.com/theogoe/first-pres-debate-2020). This dataset records sentences from each speaker (Trump, Biden and Wallce), time spoken, words per minute, and number of words. First, I made some simple pie charts to figure out who was the most talkative guy. It’s easy to tell these 3 pie charts look similar, where Trump said the most words and sentences (not surprising). Biden had slightly longer talking time, though he said less sentences. 
+This analysis is based on the data provided by [Kaggle](https://www.kaggle.com/theogoe/first-pres-debate-2020). This dataset records sentences from each speaker (Trump, Biden and Wallace), time spoken, words per minute, and number of words. First, I made some simple pie charts to figure out who was the most talkative guy. It’s easy to tell these 3 pie charts look similar, where Trump said the most words and sentences (not surprising). Biden had slightly longer talking time, though he said less sentences. 
 ```python
 n_sen =df.groupby('speaker').agg({"text":'count'}).reset_index()
 n_words =df.groupby('speaker').agg({"num_words":'sum'}).reset_index()
@@ -72,7 +72,7 @@ generate_wordcloud(df1)
 ```
 
 ![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/first_debate/cloud.png?raw=true){: .center-block :} 
-OK, here’s the main fun part. Based on the drinking game, I create 3 keywords list, 2 for each candidate and one for them both. I assume you needed to have shot when a keyword is mentioned. So I calculated the number of shots based on the game rules as followed.
+OK, here’s the fun part. Based on the drinking game, I create 3 keywords list, 2 for each candidate and one for them both. I assume you needed to have shot when a keyword is mentioned, so I calculated the number of shots based on the game rules as followed.
 ```python
 # create a list of key words for both candidates based on the drinking game rules
 trump_key = ['china', 'hunter','fake news', 'great', 'sleepy joe', 'witch hunt', 'space force', 'vaccine']

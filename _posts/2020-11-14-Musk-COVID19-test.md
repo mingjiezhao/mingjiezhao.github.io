@@ -13,8 +13,7 @@ It is frustrating when you are not sure if you have got the COVID-19, after taki
 (Note: compared to the Frequentist statistics, Bayesian statistics is a theory in the field of statistics based on the Bayesian interpretation of probability where probability expresses a degree of belief in an event[Ref. 1])
 
 1. What is the accuracy of the test?
-
-When it comes to "accuracy", most people are usually looking for one number. However, in statistics, the accuracy is usually related to two things: False Positive rate (FP) and False Negative rate (FN). I believe most people have heard of these terms but I want to point out the basic Bayesian concept: conditional probability:Pr(A|B) is the probability of event A when event B happens. Maybe you have not noticed but we are actually using conditional probability a lot in daily lives. One simple example would be "the chance you won 1 Million dollars from lottery". This can be seen a conditional probability like Pr(win $1 Mil. |pay $2 for the lottery). I think it's pretty fair, you cannot get anything unless you buy the lottery first. So if someone get a positive result on one test, it does not mean he/she must has COVID19 for true, it means he/she can evaluate the conditional probability of Pr(really has COVID19 |test positive).This is because there's no perfect, 100% accuracy test, which is understandable.
+When it comes to "accuracy", most people are usually looking for one number. However, in statistics, the accuracy is usually related to two things: False Positive rate (FP) and False Negative rate (FN). I believe most people have heard of these terms but I want to point out the basic Bayesian concept: conditional probability:Pr(A|B) is the probability of event A when event B happens. Maybe you have not noticed but we are actually using conditional probability a lot in daily lives. One simple example would be "the chance you won 1 Million dollars from lottery". This can be seen a conditional probability like Pr(win $1 Mil. |pay $2 for the lottery). I think it's pretty fair, you cannot get anything unless you buy the lottery first. So if someone get a positive result on one test, it does not mean he/she must has COVID19 for true, it means he/she can evaluate the conditional probability of $Pr(really has COVID19 |test positive)$.This is because there's no perfect, 100% accuracy test, which is understandable.
 
 Obviously we want to small values for both FN and FP. When talking about the accuracy of the test, this single number usually means PPA: Positive Percent Agreement=True Positive/(True positive+False Negative). I found a FDA document of the test that Musk took[Ref. 2], the PPA is 84%. We will use this number for some calculations later to help Musk!
 
@@ -66,11 +65,11 @@ Back to the Musk's test results, we are interested in Pr(truly positive | 4 test
 Let's do the calculation with 3 steps
 1) calculate the numerator: 
 
-Pr(B|A)Pr(A) = Pr(B1=positive|A) * Pr(B2=negative|A) * Pr(A)
+Pr(B|A)Pr(A) = Pr(B1=positive |A) * Pr(B2=negative |A) * Pr(A)
 
-=Pr(test positive|truly positive) * Pr(test negative|truly positive) * Pr(A)
+=Pr(test positive| truly positive) * Pr(test negative| truly positive) * Pr(A)
 
-=[1-Pr(test negative|truly positive)] * Pr(test negative|truly positive) * Pr(A)
+=[1-Pr(test negative| truly positive)] * Pr(test negative| truly positive) * Pr(A)
 
 =[1-0.16]* 0.16 * 0.105
 

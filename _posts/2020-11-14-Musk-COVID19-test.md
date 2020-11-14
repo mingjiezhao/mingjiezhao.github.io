@@ -1,19 +1,20 @@
 ﻿---
 layout: post
 title: Should Elon Musk worry about his COVID-19 test results?
-subtitle: An Introduction to Basic Baysian Theories 
+subtitle: An Introduction to Basic Bayesian Theories 
 tags: [COVID-19]
 comments: true
 ---
 I believe many people saw the tweet from Elon Musk doubting the COVID-19 tests he took. 
-![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/tweet){: .center-block :}
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/tweet.jpg){: .center-block :}
+
 It is frustrating when you are not sure if you have got the COVID-19, after taking four times of tests. But, how to explain this? Should we not believe any rapid antigen test? I am also curious about the answers so I did some quick analyses based on Bayesian theories and I hope this blog can help you understand better in terms of evaluating the test results.
 
 (Note: compared to the Frequentist statistics, Bayesian statistics is a theory in the field of statistics based on the Bayesian interpretation of probability where probability expresses a degree of belief in an event[Ref. 1])
 
 1. What is the accuracy of the test?
 
-When it comes to "accuracy", most people are usually looking for one number. However, in statistics, the accuracy is usually related to two things: False Positive rate (FP) and False Negative rate (FN). I believe most people have heard of these terms but I want to point out the basic Bayesian concept: conditional probability:Pr(A|B) is the probability of event A when event B happens. Maybe you have not noticed but we are actually using conditional probability a lot in daily lives. One simple example would be "the chance you won 1 Million dollars from lottery". This can be seen a conditional probability like Pr(win $1 Mil. | pay $2 for the lottery). I think it's pretty fair, you cannot get anything unless you buy the lottery first. So if someone get a positive result on one test, it does not mean he/she must has COVID19 for true, it means he/she can evaluate the conditional probability of Pr(really has COVID19 | test positive).This is because there's no perfect, 100% accuracy test, which is understandable.
+When it comes to "accuracy", most people are usually looking for one number. However, in statistics, the accuracy is usually related to two things: False Positive rate (FP) and False Negative rate (FN). I believe most people have heard of these terms but I want to point out the basic Bayesian concept: conditional probability:Pr(A|B) is the probability of event A when event B happens. Maybe you have not noticed but we are actually using conditional probability a lot in daily lives. One simple example would be "the chance you won 1 Million dollars from lottery". This can be seen a conditional probability like Pr(win $1 Mil. |pay $2 for the lottery). I think it's pretty fair, you cannot get anything unless you buy the lottery first. So if someone get a positive result on one test, it does not mean he/she must has COVID19 for true, it means he/she can evaluate the conditional probability of Pr(really has COVID19 |test positive).This is because there's no perfect, 100% accuracy test, which is understandable.
 
 Obviously we want to small values for both FN and FP. When talking about the accuracy of the test, this single number usually means PPA: Positive Percent Agreement=True Positive/(True positive+False Negative). I found a FDA document of the test that Musk took[Ref. 2], the PPA is 84%. We will use this number for some calculations later to help Musk!
 
@@ -22,13 +23,13 @@ Let's start from something simple with only one test result. From the FDA docume
 
 So if we agree with that FP=0 here, so Pr(truly positive | test positive)=1, how do we calculate Pr(truly positive | test negative)? 
 To do that we need to use the Bayes' theorem:
-![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theory){: .center-block :}
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theory.jpg){: .center-block :}
 
 
 
 Based on the table from FDA document:
 
-![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theorem){: .center-block :}
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theorem.jpg){: .center-block :}
 
 Here A: truly positive(has COVID19), B: test negative
 * Pr(B|A)=Pr(test negative|truly positive)=5/31=0.16 -> yes it is definition of FN, which equals to 1-PPA
@@ -77,21 +78,20 @@ Pr(B|A)Pr(A) = Pr(B1=positive|A) * Pr(B2=negative|A) * Pr(A)
 
 2) calculate the denominator:
 Pr(B)= Pr(B1=negative, B2=positive)
-    
-    =Pr(B1=negative) * Pr(B2=positive)
+     =Pr(B1=negative) * Pr(B2=positive)
 
 a) From the calculation, we already calculated the single text situation Pr(B1=negative) = (1-FP) *(1-0.105) + 0.16 *0.105 = 0.9118, but notice that here we assume FP=0.01. So  
 Pr(B1=negative) = (1-0.01) *(1-0.105) + 0.16 *0.105 = 0.90285
 
 b) Pr(B2=positive)
 
-    =Pr(test positive | truly negative) * Pr(truly negative) + Pr(test positive | truly positive) * Pr(truly positive)
+   =Pr(test positive | truly negative) * Pr(truly negative) + Pr(test positive | truly positive) * Pr(truly positive)
     
-    =FP *(1-0.105) + (1-FN) *0.105 
+   =FP *(1-0.105) + (1-FN) *0.105 
     
-    =0.01 *(1-0.105) + (1-0.16) *0.105 
+   =0.01 *(1-0.105) + (1-0.16) *0.105 
     
-    =0.0971
+   =0.0971
 
 So, Pr(B)=0.90285*0.0971 = 0.0877
 

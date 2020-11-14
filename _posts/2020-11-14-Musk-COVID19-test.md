@@ -6,7 +6,7 @@ tags: [COVID-19]
 comments: true
 ---
 I believe many people saw the tweet from Elon Musk doubting the COVID-19 tests he took. 
-![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/tweet.jpg){: .center-block :}
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/tweet.jpg?raw=true){: .center-block :}
 
 It is frustrating when you are not sure if you have got the COVID-19, after taking four times of tests. But, how to explain this? Should we not believe any rapid antigen test? I am also curious about the answers so I did some quick analyses based on Bayesian theories and I hope this blog can help you understand better in terms of evaluating the test results.
 
@@ -16,26 +16,26 @@ It is frustrating when you are not sure if you have got the COVID-19, after taki
 
 When it comes to "accuracy", most people are usually looking for one number. However, in statistics, the accuracy is usually related to two things: False Positive rate (FP) and False Negative rate (FN). 
 
-I believe most people have heard of these terms but I want to point out the basic Bayesian concept: **conditional probability**. Pr(A|B) is the probability of event A when event B happens. Maybe you have not noticed but we are actually using conditional probability a lot in daily lives. One simple example would be "the chance you won 1 Million dollars from lottery". This can be seen a conditional probability like Pr(win $1 Mil. |pay $2 for the lottery). I think it's pretty fair, you cannot get anything unless you buy the lottery first. So if someone get a positive result on one test, it does not mean he/she must has COVID19 for true, it means he/she can evaluate the conditional probability of Pr(truly has COVID19 |test positive).This is because there's no perfect, 100% accuracy test, which is understandable.
+I believe most people have heard of these terms but I want to point out the basic Bayesian concept: **conditional probability**. Pr(A| B) is the probability of event A when event B happens. Maybe you have not noticed but we are actually using conditional probability a lot in daily lives. One simple example would be "the chance you won 1 Million dollars from lottery". This can be seen a conditional probability like Pr(win $1 Mil.|pay $2 for the lottery). I think it's pretty fair, you cannot get anything unless you buy the lottery first. So if someone get a positive result on one test, it does not mean he/she must has COVID19 for true, it means he/she can evaluate the conditional probability of Pr(truly has COVID19|test positive).This is because there's no perfect, 100% accuracy test, which is understandable.
 
-Obviously we want to small values for both FN and FP. When talking about the accuracy of the test, this single number usually means PPA: Positive Percent Agreement=True Positive/(True positive+False Negative). I found a FDA document of the test that Musk took[Ref. 2], the PPA is 84%. We will use this number for some calculations later to help Musk!
+Obviously we want to small values for both FN and FP. When talking about the accuracy of the test, this single number usually means PPA: Positive Percent Agreement=True Positive/(True positive+False Negative). I found a FDA document of the test that Musk took [Ref. 2], the PPA is 84%. We will use this number for some calculations later to help Musk!
 
 ## 2. Calculation for one single test
-Let's start from something simple with only one test result. From the FDA document[Ref. 2], we can see some other numbers, Negative Percent Agreement (NPA=True Negative/(True Negative+False Positive) is 100%. In other words, the document is saying FP=0, and if you tested positive, then you MUST have COVID19(no way you can be negative!). However, this conclusion is based on 226 samples, which I think is a quite small number to get a pretty reliable statistics. There is also news from September about the manufacture's tests gave False Positives in nursing homes [Ref. 3]. I personally don't hold any opinions about the manufacture, and the purpose here is to use some numbers for my calculation. 
+Let's start from something simple with only one test result. From the FDA document[Ref. 2], we can see some other numbers, *Negative Percent Agreement* (NPA=True Negative/(True Negative+False Positive) is 100%. In other words, the document is saying FP=0, and if you tested positive, then you MUST have COVID19 (no way you can be negative!). However, this conclusion is based on 226 samples, which I think is a quite small number to get a pretty reliable statistics. There is also news from September about the manufacture's tests gave False Positives in nursing homes [Ref. 3]. I personally don't hold any opinions about the manufacture, and the purpose here is to use some numbers for my calculation. 
 
 So if we agree with that FP=0 here, so Pr(truly positive | test positive)=1, how do we calculate Pr(truly positive | test negative)? 
 To do that we need to use the Bayes' theorem:
-![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theory.jpg){: .center-block :}
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theory.jpg?raw=true){: .center-block :}
 
 
 
 Based on the table from FDA document:
 
-![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theorem.jpg){: .center-block :}
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theorem.jpg?raw=true){: .center-block :}
 
-Here A: truly positive(has COVID19), B: test negative
+Here **Event A: truly positive(has COVID19), Event B: test negative**
 
-* Pr(B|A)=Pr(test negative |truly positive)=5/31=0.16 -> yes it is definition of FN, which equals to 1-PPA
+* Pr(B |A)=Pr(test negative|truly positive)=5/31=0.16 -> yes it is definition of FN, which equals to 1-PPA
 * Pr(A) is the probability of having COVID19. I am using 10.5% as a national number from CDC for week 45 [Ref. 4]. This is calculated as "the overall percentage of respiratory specimens testing positive for SARS-CoV-2, the virus causing COVID-19".
 * Pr(B) is the probability of having a negative test result, it equals to: 
     
@@ -127,11 +127,11 @@ Pr(B|A)Pr(A) =
 #### 2) calculate the denominator:
 Pr(B)= Pr(B1=positive, B2=negative, B3=positive, B3=negative)
     
-    =Pr(B1=positive) * Pr(B2=negative) * Pr(B3=positive) * Pr(B4=negative)
+     =Pr(B1=positive) * Pr(B2=negative) * Pr(B3=positive) * Pr(B4=negative)
     
-    = (0.90285*0.0971)^2
+     = (0.90285*0.0971)^2
     
-    = 0.00769
+     = 0.00769
  
 #### 3) put numerator and denominator for the final results:
 Pr(B|A)= 0.0019/0.00769 = 0.247

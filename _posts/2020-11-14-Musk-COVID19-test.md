@@ -59,31 +59,31 @@ While it's nice to have FP=0, let's assume nothing is perfect and we have a smal
 
 Back to the Musk's test results, we are interested in Pr(truly positive\|4 test results). Here **event A** is still the probability of having COVID19 (truly positive), but **event B** is not a single event anymore, because he did 4 tests (nice to be rich!). To make it simpler, let's first start with the calculations with 2 test results: B1=positive, B2=negative. Then we will move on to the 4 tests situations later. 
 
-Here we need to assume the 4 tests are independent events, meaning one test result has nothing to do with another. It's an important assumption because now we can represent the joint probability Pr(B\|A)= Pr(B1,B2\|A) with the marginal probabilities Pr(B1\|A)*Pr(B2\|A). So we have:
+Here we need to assume the 4 tests are independent events, meaning one test result has nothing to do with another. It's an important assumption because now we can represent the joint probability Pr(B\|A)= Pr(B1,B2\|A) with the marginal probabilities 2\* Pr(B1\|A)*Pr(B2\|A). Here 2 is the value of combination for "2 choose 1".  So we have:
 
 * Pr(B\|A)= Pr(B1=positive, B2=negative\|A)
 
-    =Pr(B1=positive\|A) * Pr(B2=negative\|A)
+    =2*Pr(B1=positive\|A) * Pr(B2=negative\|A)
 * Pr(B)= Pr(B1=positive, B2=negative)
     
-    =Pr(B1=positive) * Pr(B2=negative)
+    =2*Pr(B1=positive) * Pr(B2=negative)
     
 Let's do the calculation with **3 steps**
 #### 1) calculate the numerator of Bayesian theorem: 
 
-Pr(B\|A)Pr(A) = Pr(B1=positive\|A) * Pr(B2=negative\|A) * Pr(A)
+Pr(B\|A)Pr(A) = 2*Pr(B1=positive\|A) * Pr(B2=negative\|A) * Pr(A)
 
-=Pr(test positive\|truly positive) * Pr(test negative\|truly positive) * Pr(A)
+=2*Pr(test positive\|truly positive) * Pr(test negative\|truly positive) * Pr(A)
 
-=[1-Pr(test negative\|truly positive)] * Pr(test negative\|truly positive) * Pr(A)
+=2*[1-Pr(test negative\|truly positive)] * Pr(test negative\|truly positive) * Pr(A)
 
-=[1-0.16]* 0.16 * 0.105
+=2\*[1-0.16]* 0.16 * 0.105
 
-=0.0141
+=0.0282
 
 #### 2) calculate the denominator of Bayesian theorem:
 Pr(B)= Pr(B1=negative, B2=positive)
-     =Pr(B1=negative) * Pr(B2=positive)
+     =2*Pr(B1=negative) * Pr(B2=positive)
 
 **a)** In the calculation above, the single text situation Pr(B1=negative) = (1-FP) *(1-0.105) + 0.16 *0.105 = 0.9118, but notice that here we assume FP=0.01. So  
 Pr(B1=negative) = (1-0.01) *(1-0.105) + 0.16 *0.105 = 0.90285
@@ -98,10 +98,10 @@ Pr(B1=negative) = (1-0.01) *(1-0.105) + 0.16 *0.105 = 0.90285
     
    =0.0971
 
-So, Pr(B)=0.90285*0.0971 = 0.0877
+So, Pr(B)=2\*0.90285*0.0971 = 0.1753
 
 #### 3) put numerator and denominator for the final results:
-Pr(B\|A)= 0.0141/0.0877 = 0.161
+Pr(B\|A)= 0.0282/0.1753 = 0.161
 
 We can see that although some got one negative result and one positive result, his/her probability of having COVID19 is not 0.5!
 

@@ -142,7 +142,7 @@ The intuition behind the Bayesian statistics is that before we do any test, we w
 
 **Two lessons learned from this analysis:**
 * The general "accuracy" of the test depends on the prevalence, since it sets the prior probability in the calculation. 
-* If you test positive for some uncommon disease (small prevalence in population), it's likely that your doctor to ask you for a second test to confirm. It's possible that Pr(have disease\|one test positive)=0.6 but Pr(have disease\|one test positive)>0.9. I kind of show the idea in the calculation above.
+* If you test positive for some uncommon disease (small prevalence in population), it's likely that your doctor to ask you for a second test to confirm. It's possible that Pr(have disease\|one positive test)=0.6 but Pr(have disease\|two positive tests)>0.9. I kind of show the idea in the calculation above.
 
 I hope this blog can help you understand better in terms of evaluating the test results. Enjoy using Bayesian and stay healthy!
 

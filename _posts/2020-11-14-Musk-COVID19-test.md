@@ -8,20 +8,25 @@ comments: true
 I believe many people saw the tweet from Elon Musk doubting the COVID-19 tests he took. 
 ![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/tweet.jpg?raw=true){: .center-block :}
 
-It is frustrating when you are not sure if you have got the COVID-19, after taking four times of tests. But, how to explain this? Should we not believe any rapid antigen test? I am also curious about the answers so I did some quick analyses based on Bayesian theories and I hope this blog can help you understand better in terms of evaluating the test results.
+It is frustrating when you are not sure if you truly have COVID-19, after taking four times of tests. Similar to Musk, I am also curious to know **what his probability of having COVID19 given the 4 test results**. This blog aims to use basic Bayesian statistics to answer this question. Compared to the Frequentist statistics, Bayesian statistics is a theory in the field of statistics based on the Bayesian interpretation of probability where probability expresses a degree of belief in an event[Ref. 1]
 
-(Note: compared to the Frequentist statistics, Bayesian statistics is a theory in the field of statistics based on the Bayesian interpretation of probability where probability expresses a degree of belief in an event[Ref. 1])
+I found the following numbers to help me with some calculations later:
+* Positive Percent Agreement=0.84, indicating that **84%** people with positive test result truly have COVID19 [Ref. 2]
+* Nationally, the overall percentage of respiratory specimens testing positive for SARS-CoV-2, the virus causing COVID-19 is **10.5%** [Ref. 3]. Though it's not perfectly accuracy, but we could assume 10.5% of people who took tests are truly positive. 
+
+With these 2 numbers and the test results (2 positive, 2 negative), we can begin our journey of calculating the probability for Musk. :smile:
+
 
 ## 1. What is the accuracy of the test?
 
 When it comes to "accuracy", most people are usually looking for one number. However, in statistics, the accuracy is usually related to two things: False Positive rate (FP) and False Negative rate (FN). 
 
-I believe most people have heard of these terms but I want to point out the basic Bayesian concept: **conditional probability**. Pr(A\| B) is the probability of event A when event B happens. Maybe you have not noticed but we are actually using conditional probability a lot in daily lives. One simple example would be "the chance you won 1 Million dollars from lottery". This can be seen a conditional probability like Pr(win $1 Mil.\|pay $2 for the lottery). I think it's pretty fair, you cannot get anything unless you buy the lottery first. So if someone get a positive result on one test, it does not mean he/she must has COVID19 for true, it means he/she can evaluate the conditional probability of Pr(truly has COVID19|test positive).This is because there's no perfect, 100% accuracy test, which is understandable.
+I believe most people have heard of these terms but I want to point out the basic Bayesian concept: **conditional probability**. Pr(A\| B) is the probability of event A when event B happens. Maybe you have not noticed but we are actually using conditional probability a lot in daily lives. One simple example would be "the chance you won 1 Million dollars from lottery". This can be seen a conditional probability like Pr(win $1 Mil.\|pay $2 for the lottery). I think it's pretty fair, you cannot get anything unless you buy the lottery first. So if someone get a positive result on one test, it does not mean he/she must has COVID19 for true, it means he/she can evaluate the conditional probability of Pr(truly has COVID19\|test positive).This is because there's no perfect, 100% accuracy test, which is understandable.
 
 Obviously we want to small values for both FN and FP. When talking about the accuracy of the test, this single number usually means PPA: Positive Percent Agreement=True Positive/(True positive+False Negative). I found a FDA document of the test that Musk took [Ref. 2], the PPA is 84%. We will use this number for some calculations later to help Musk!
 
 ## 2. Calculation for one single test
-Let's start from something simple with only one test result. From the FDA document[Ref. 2], we can see some other numbers, *Negative Percent Agreement* (NPA=True Negative/(True Negative+False Positive) is 100%. In other words, the document is saying FP=0, and if you tested positive, then you MUST have COVID19 (no way you can be negative!). However, this conclusion is based on 226 samples, which I think is a quite small number to get a pretty reliable statistics. There is also news from September about the manufacture's tests gave False Positives in nursing homes [Ref. 3]. I personally don't hold any opinions about the manufacture, and the purpose here is to use some numbers for my calculation. 
+Let's start from something simple with only one test result. From the FDA document[Ref. 2], we can see some other numbers, *Negative Percent Agreement* (NPA=True Negative/(True Negative+False Positive) is 100%. In other words, the document is saying FP=0, and if you tested positive, then you MUST have COVID19 (no way you can be negative!). However, this conclusion is based on 226 samples, which I think is a quite small number to get a pretty reliable statistics. There is also news from September about the manufacture's tests gave False Positives in nursing homes [Ref. 4]. I personally don't hold any opinions about the manufacture, and the purpose here is to use some numbers for my calculation. 
 
 So if we agree with that FP=0 here, so Pr(truly positive | test positive)=1, how do we calculate Pr(truly positive | test negative)? 
 To do that we need to use the Bayes' theorem:
@@ -31,12 +36,12 @@ To do that we need to use the Bayes' theorem:
 
 Based on the table from FDA document:
 
-![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theory.jpg?raw=true){: .center-block :}
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/table.jpg?raw=true){: .center-block :}
 
 Here **Event A: truly positive(has COVID19), Event B: test negative**
 
-* Pr(B\|A)=Pr(test negative\|truly positive)=5/31=0.16 -> yes it is definition of FN, which equals to 1-PPA
-* Pr(A) is the probability of having COVID19. I am using 10.5% as a national number from CDC for week 45 [Ref. 4]. This is calculated as "the overall percentage of respiratory specimens testing positive for SARS-CoV-2, the virus causing COVID-19".
+* Pr(B\|A)=Pr(test negative\|truly positive)= FN =1-PPA =1-0.84 =0.16 
+* Pr(A) is the probability of having COVID19. I am using 10.5% as a national number from CDC for week 45 [Ref. 3]. This is calculated as "the overall percentage of respiratory specimens testing positive for SARS-CoV-2, the virus causing COVID-19".
 * Pr(B) is the probability of having a negative test result, it equals to: 
     
     Pr(test negative\|truly negative) * Pr(truly negative) + Pr(test negative\|truly positive) * Pr(truly positive)
@@ -83,7 +88,7 @@ Pr(B\|A)Pr(A) = Pr(B1=positive\|A) * Pr(B2=negative\|A) * Pr(A)
 Pr(B)= Pr(B1=negative, B2=positive)
      =Pr(B1=negative) * Pr(B2=positive)
 
-**a)** From the calculation, we already calculated the single text situation Pr(B1=negative) = (1-FP) *(1-0.105) + 0.16 *0.105 = 0.9118, but notice that here we assume FP=0.01. So  
+**a)** In the calculation above, the single text situation Pr(B1=negative) = (1-FP) *(1-0.105) + 0.16 *0.105 = 0.9118, but notice that here we assume FP=0.01. So  
 Pr(B1=negative) = (1-0.01) *(1-0.105) + 0.16 *0.105 = 0.90285
 
 **b)** Pr(B2=positive)
@@ -103,9 +108,8 @@ Pr(B\|A)= 0.0141/0.0877 = 0.161
 
 We can see that although some got one negative result and one positive result, his/her probability of having COVID19 is not 0.5!
 
-**Now, the final calculation is for Musk's 4 tests.** Similar to the 2 tests, we just need to multiply things together with the independent assumption:
-Pr(truly positive\|4 test results)
-* Pr(B\|A)= Pr(B1=positive, B2=negative, B3=positive, B4=negative|A)
+**Now, the final calculation is for Musk's 4 tests.** Similar to the 2 tests calculation, we just need to multiply things together with the independent assumption to calculate Pr(truly positive\|4 test results)
+* Pr(B\|A)= Pr(B1=positive, B2=negative, B3=positive, B4=negative\|A)
 
     =Pr(B1=positive\|A) * Pr(B2=negative\|A) * Pr(B3=positive\|A) * Pr(B4=negative\|A)
 * Pr(B)= Pr(B1=positive, B2=negative, B3=positive, B3=negative)
@@ -114,7 +118,7 @@ Pr(truly positive\|4 test results)
 
 #### 1) calculate the numerator: 
 
-Pr(B\|A)Pr(A) = 
+ Pr(B\|A)Pr(A)  
 
 =[Pr(test positive\|truly positive)]^2 * [Pr(test negative\|truly positive)]^2 * Pr(A)
 
@@ -142,14 +146,14 @@ Glad that you survived with all the calculations! What have you found so far? Yo
 
 The intuition behind the Bayesian statistics is that before we do any test, we would assign our prior knowledge to the calculation (called prior probability). Here it is the number of 0.105, the probability of having COVID19. When we performed the test, we would update the probability based on the test result, and this probability is called posterior probability. The value of posterior probability is between the prior probability and the observed results (here it's 0.5 because we got half negative half positive). When you do more tests, even though the test results keep the same half&half, you are pushing your posterior probability towards the 0.5 and far from the prior (0.105). That's why you see an increased chance of having COVID19 (0.247 vs. 0.161).
 
-**Two simple conclusions from this analysis:**
+**Two lessons learned from this analysis:**
 * The general "accuracy" of the test depends on the prevalence, since it sets the prior probability in the calculation. 
 * If you test positive for some uncommon disease (small prevalence in population), it's likely that your doctor to ask you for a second test to confirm. It's possible that Pr(have disease\|one test positive)=0.6 but Pr(have disease\|one test positive)>0.9. I kind of show the idea in the calculation above.
 
-Hope you will enjoy using Bayesian and stay healthy!
+I hope this blog can help you understand better in terms of evaluating the test results. Enjoy using Bayesian and stay healthy!
 
 **References**
 1. Wiki page: https://en.wikipedia.org/wiki/Bayesian_statistics
 2. FDA document of BD Rapid Detection https://www.fda.gov/media/139755/download
-3. NY Times: https://www.nytimes.com/2020/10/07/health/nevada-covid-testing-nursing-homes.html
-4. CDC report:https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html
+3. CDC report:https://www.cdc.gov/coronavirus/2019-ncov/covid-data/covidview/index.html
+4. NY Times: https://www.nytimes.com/2020/10/07/health/nevada-covid-testing-nursing-homes.html

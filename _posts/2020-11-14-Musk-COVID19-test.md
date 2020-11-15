@@ -31,17 +31,17 @@ To do that we need to use the Bayes' theorem:
 
 Based on the table from FDA document:
 
-![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theorem.jpg?raw=true){: .center-block :}
+![](https://github.com/mingjiezhao/mingjiezhao.github.io/blob/master/img/posts_imgs/COVID-19/Musk_test/theory.jpg?raw=true){: .center-block :}
 
 Here **Event A: truly positive(has COVID19), Event B: test negative**
 
-* Pr(B |A)=Pr(test negative|truly positive)=5/31=0.16 -> yes it is definition of FN, which equals to 1-PPA
+* Pr(B\|A)=Pr(test negative\|truly positive)=5/31=0.16 -> yes it is definition of FN, which equals to 1-PPA
 * Pr(A) is the probability of having COVID19. I am using 10.5% as a national number from CDC for week 45 [Ref. 4]. This is calculated as "the overall percentage of respiratory specimens testing positive for SARS-CoV-2, the virus causing COVID-19".
 * Pr(B) is the probability of having a negative test result, it equals to: 
     
-    Pr(test negative |truly negative) * Pr(truly negative) + Pr(test negative |truly positive) * Pr(truly positive)
+    Pr(test negative\|truly negative) * Pr(truly negative) + Pr(test negative\|truly positive) * Pr(truly positive)
     
-    =Pr(B |truly negative) * Pr(1-A) + Pr(B |A) * Pr(A) 
+    =Pr(B\|truly negative) * Pr(1-A) + Pr(B\|A) * Pr(A) 
     
     = (1-FP) *(1-0.105) + 0.16 *0.105
     
@@ -49,7 +49,7 @@ Here **Event A: truly positive(has COVID19), Event B: test negative**
     
 Put them together and use Bayes' theorem:
 
-Pr(B |A)= 0.16*0.105/0.9118 = 0.018
+Pr(B\|A)= 0.16*0.105/0.9118 = 0.018
 
 This means you will unlikely to have COVID19 if you have a negative test result, but it's not impossible.
 
@@ -57,11 +57,11 @@ This means you will unlikely to have COVID19 if you have a negative test result,
 
 While it's nice to have FP=0, let's assume nothing is perfect and we have a small FP of 1%. So now it's possible to have a false negative result.
 
-Back to the Musk's test results, we are interested in Pr(truly positive |4 test results). Here event A is still the probability of having COVID19 (truly positive), but event B is not a single event anymore, because he did 4 tests (nice to be rich!). Here we need to assume the 4 tests are independent events, meaning one test results have nothing to do with another. It's an important assumption here because now we can have Pr(B |A)= Pr(B1,B2,B3,B4 |A), where B1,B2,B3,B4 indicate the 4 test results. To make it simpler, let's first do the calculations with 2 test results: B1=positive, B2=negative. Since B1 and B2 are independent events:
+Back to the Musk's test results, we are interested in Pr(truly positive\|4 test results). Here event A is still the probability of having COVID19 (truly positive), but event B is not a single event anymore, because he did 4 tests (nice to be rich!). Here we need to assume the 4 tests are independent events, meaning one test results have nothing to do with another. It's an important assumption here because now we can have Pr(B\|A)= Pr(B1,B2,B3,B4\|A), where B1,B2,B3,B4 indicate the 4 test results. To make it simpler, let's first do the calculations with 2 test results: B1=positive, B2=negative. Since B1 and B2 are independent events:
 
-* Pr(B |A)= Pr(B1=positive, B2=negative |A)
+* Pr(B\|A)= Pr(B1=positive, B2=negative\|A)
 
-    =Pr(B1=positive |A) * Pr(B2=negative |A)
+    =Pr(B1=positive\|A) * Pr(B2=negative\|A)
 * Pr(B)= Pr(B1=positive, B2=negative)
     
     =Pr(B1=positive) * Pr(B2=negative)
@@ -69,11 +69,11 @@ Back to the Musk's test results, we are interested in Pr(truly positive |4 test 
 Let's do the calculation with 3 steps
 #### 1) calculate the numerator: 
 
-Pr(B |A)Pr(A) = Pr(B1=positive |A) * Pr(B2=negative |A) * Pr(A)
+Pr(B\|A)Pr(A) = Pr(B1=positive\|A) * Pr(B2=negative\|A) * Pr(A)
 
-=Pr(test positive| truly positive) * Pr(test negative| truly positive) * Pr(A)
+=Pr(test positive\|truly positive) * Pr(test negative\|truly positive) * Pr(A)
 
-=[1-Pr(test negative| truly positive)] * Pr(test negative| truly positive) * Pr(A)
+=[1-Pr(test negative\|truly positive)] * Pr(test negative\|truly positive) * Pr(A)
 
 =[1-0.16]* 0.16 * 0.105
 
@@ -88,7 +88,7 @@ Pr(B1=negative) = (1-0.01) *(1-0.105) + 0.16 *0.105 = 0.90285
 
 **b)** Pr(B2=positive)
 
-   =Pr(test positive | truly negative) * Pr(truly negative) + Pr(test positive | truly positive) * Pr(truly positive)
+   =Pr(test positive\|truly negative) * Pr(truly negative) + Pr(test positive\|truly positive) * Pr(truly positive)
     
    =FP *(1-0.105) + (1-FN) *0.105 
     
@@ -99,26 +99,26 @@ Pr(B1=negative) = (1-0.01) *(1-0.105) + 0.16 *0.105 = 0.90285
 So, Pr(B)=0.90285*0.0971 = 0.0877
 
 #### 3) put numerator and denominator for the final results:
-Pr(B|A)= 0.0141/0.0877 = 0.161
+Pr(B\|A)= 0.0141/0.0877 = 0.161
 
 We can see that although some got one negative result and one positive result, his/her probability of having COVID19 is not 0.5!
 
 **Now, the final calculation is for Musk's 4 tests.** Similar to the 2 tests, we just need to multiply things together with the independent assumption:
-Pr(truly positive | 4 test results)
-* Pr(B|A)= Pr(B1=positive, B2=negative, B3=positive, B4=negative|A)
+Pr(truly positive\|4 test results)
+* Pr(B\|A)= Pr(B1=positive, B2=negative, B3=positive, B4=negative|A)
 
-    =Pr(B1=positive|A) * Pr(B2=negative|A) * Pr(B3=positive|A) * Pr(B4=negative|A)
+    =Pr(B1=positive\|A) * Pr(B2=negative\|A) * Pr(B3=positive\|A) * Pr(B4=negative\|A)
 * Pr(B)= Pr(B1=positive, B2=negative, B3=positive, B3=negative)
     
     =Pr(B1=positive) * Pr(B2=negative) * Pr(B3=positive) * Pr(B4=negative)
 
 #### 1) calculate the numerator: 
 
-Pr(B|A)Pr(A) = 
+Pr(B\|A)Pr(A) = 
 
-=[Pr(test positive|truly positive)]^2 * [Pr(test negative|truly positive)]^2 * Pr(A)
+=[Pr(test positive\|truly positive)]^2 * [Pr(test negative\|truly positive)]^2 * Pr(A)
 
-=[1-Pr(test negative|truly positive)]^2 * [Pr(test negative|truly positive)]^2 * Pr(A)
+=[1-Pr(test negative\|truly positive)]^2 * [Pr(test negative\|truly positive)]^2 * Pr(A)
 
 =[1-0.16]^2* 0.16^2 * 0.105
 
@@ -144,7 +144,7 @@ The intuition behind the Bayesian statistics is that before we do any test, we w
 
 **Two simple conclusions from this analysis:**
 * The general "accuracy" of the test depends on the prevalence, since it sets the prior probability in the calculation. 
-* If you test positive for some uncommon disease (small prevalence in population), it's likely that your doctor to ask you for a second test to confirm. It's possible that Pr(have disease | one test positive)=0.6 but Pr(have disease | one test positive)>0.9. I kind of show the idea in the calculation above.
+* If you test positive for some uncommon disease (small prevalence in population), it's likely that your doctor to ask you for a second test to confirm. It's possible that Pr(have disease\|one test positive)=0.6 but Pr(have disease\|one test positive)>0.9. I kind of show the idea in the calculation above.
 
 Hope you will enjoy using Bayesian and stay healthy!
 

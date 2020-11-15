@@ -11,10 +11,10 @@ I believe many people saw the tweet from Elon Musk doubting the COVID-19 tests h
 It is frustrating when you are not sure if you truly have COVID-19, after taking four times of tests. Similar to Musk, I am also curious to know **what his probability of having COVID-19 is given the 4 test results**. This blog aims to use basic Bayesian statistics to answer this question. Compared to the Frequentist statistics, Bayesian statistics is a theory in the field of statistics based on the Bayesian interpretation of probability where probability expresses a degree of belief in an event [Ref. 1].
 
 I found the following numbers to help me with some calculations later:
-* Positive Percent Agreement=0.84, indicating that **84%** people with positive results with this rapid antigen test truly have COVID19 [Ref. 2]
+* Positive Percent Agreement=0.84, indicating that **84%** people who truly have COVID19 get tested positive with this rapid antigen test [Ref. 2]. 
 * Nationally, the overall percentage of respiratory specimens testing positive for SARS-CoV-2, the virus causing COVID-19 is **10.5%** [Ref. 3]. Though it's not perfectly accurate, but we could assume 10.5% of people who took tests are truly positive. 
 
-With these 2 numbers and the test results (2 positive, 2 negative), we can begin our journey of calculating the probability for Musk. 
+I am using these 2 numbers for reference here, in the future blog I will demonstrate how the changes of these number affect the calculated results (also known as sensitivity analysis). But now with the test results (2 positive, 2 negative), we can begin our journey of calculating the probability for Musk. 
 
 
 ## 1. What is the accuracy of the test?
@@ -59,7 +59,7 @@ While it's nice to have FP=0, let's assume nothing is perfect and we have a smal
 
 Back to the Musk's test results, we are interested in Pr(truly positive\|4 test results). Here **event A** is still the probability of having COVID19 (truly positive), but **event B** is not a single event anymore, because he did 4 tests (nice to be rich!). To make it simpler, let's first start with the calculations with 2 test results: B1=positive, B2=negative. Then we will move on to the 4 tests situations later. 
 
-Here we need to assume the 4 tests are independent events, meaning one test results have nothing to do with another. It's an important assumption because now we can represent the joint probability Pr(B\|A)= Pr(B1,B2\|A) with the marginal probabilities Pr(B1\|A)*Pr(B2\|A). So we have:
+Here we need to assume the 4 tests are independent events, meaning one test result has nothing to do with another. It's an important assumption because now we can represent the joint probability Pr(B\|A)= Pr(B1,B2\|A) with the marginal probabilities Pr(B1\|A)*Pr(B2\|A). So we have:
 
 * Pr(B\|A)= Pr(B1=positive, B2=negative\|A)
 
@@ -105,34 +105,34 @@ Pr(B\|A)= 0.0141/0.0877 = 0.161
 
 We can see that although some got one negative result and one positive result, his/her probability of having COVID19 is not 0.5!
 
-**Now, the final calculation is for Musk's 4 tests.** Similar to the 2 tests calculation, we just need to multiply things together with the independent assumption to calculate Pr(truly positive\|4 test results)
+**Now, the final calculation is for Musk's 4 tests.** Similar to the 2 tests calculation, we just need to multiply things together with the independent assumption to calculate Pr(truly positive\|4 test results). The only difference is that we need to multiply 6 when using the marginal probabilities to represent the joint probability. Here 6 is the value of combination for "4 choose 2".   
 * Pr(B\|A)= Pr(B1=positive, B2=negative, B3=positive, B4=negative\|A)
 
-    =Pr(B1=positive\|A) * Pr(B2=negative\|A) * Pr(B3=positive\|A) * Pr(B4=negative\|A)
+    =6 * Pr(B1=positive\|A) * Pr(B2=negative\|A) * Pr(B3=positive\|A) * Pr(B4=negative\|A)
 * Pr(B)= Pr(B1=positive, B2=negative, B3=positive, B3=negative)
     
-    =Pr(B1=positive) * Pr(B2=negative) * Pr(B3=positive) * Pr(B4=negative)
+    =6 * Pr(B1=positive) * Pr(B2=negative) * Pr(B3=positive) * Pr(B4=negative)
 
 #### 1) calculate the numerator: 
 
  Pr(B\|A)Pr(A)  
 
-=[Pr(test positive\|truly positive)]^2 * [Pr(test negative\|truly positive)]^2 * Pr(A)
+=6 * [Pr(test positive\|truly positive)]^2 * [Pr(test negative\|truly positive)]^2 * Pr(A)
 
-=[1-Pr(test negative\|truly positive)]^2 * [Pr(test negative\|truly positive)]^2 * Pr(A)
+=6 * [1-Pr(test negative\|truly positive)]^2 * [Pr(test negative\|truly positive)]^2 * Pr(A)
 
-=[1-0.16]^2* 0.16^2 * 0.105
+=6 \* (1-0.16)^2* 0.16^2 * 0.105
 
-=0.0019
+=0.0114
 
 #### 2) calculate the denominator:
 Pr(B)= Pr(B1=positive, B2=negative, B3=positive, B3=negative)
-     =Pr(B1=positive) * Pr(B2=negative) * Pr(B3=positive) * Pr(B4=negative)
-     = (0.90285*0.0971)^2
-     = 0.00769
+     =6 \* Pr(B1=positive) * Pr(B2=negative) * Pr(B3=positive) * Pr(B4=negative)
+     =6 \* (0.90285*0.0971)^2
+     = 0.04614
  
 #### 3) put numerator and denominator for the final results:
-Pr(B|A)= 0.0019/0.00769 = 0.247
+Pr(B|A)= 0.0114/0.04614 = 0.247
 
 ## 4. Conclusions
 

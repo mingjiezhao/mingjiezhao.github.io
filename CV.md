@@ -4,7 +4,7 @@ title: CV
 subtitle: 
 ---
 #### Experiences
-- Data Scientist, Wells Fargo, NC
+- Data Scientist - AI model development, Wells Fargo, NC
 
 - Data Science Consultant, Self-employed, NC
 
@@ -50,7 +50,11 @@ subtitle:
 	EnergyPlus, CFD
 
 
-#### International Conference Presentations
+#### International Conference Presentations and Technical Talks
+
+- Conference of Data Sciense Salon Virtural (Healthcare, Finance & Technlogy) 2021       
+
+	formulated.by, United States 
 
 - North American Passive House Conference      
 
